@@ -1,0 +1,102 @@
+.home-text{
+    color: #303030;
+}
+.about-us-text {
+    color: #0a85d1;
+}
+.first-sec-main{
+    background-color : #e7e7e7;
+}
+.Minimalin-E-Commerce{
+margin-top: 6em;
+margin-inline-start: 40px;
+
+}
+.in-color{
+    color: #0a85d1;
+}
+.paragraph1-header{
+    margin-bottom:20px;
+}
+.paragraph1-section{
+    margin-bottom: 15px;
+    font-size: 18px;
+    white-space: normal;
+    line-height: 1.8;
+
+}
+.img-paragraph1-prop{
+    max-width: 90%; 
+    height: auto;
+    border-radius: 20px;
+}
+.paragraph1-section-container{
+    display: flex;
+    flex-direction: column; /* Keeps paragraphs together vertically */
+    gap: 20px;
+}
+.video-bg {
+    background-image: url('https://minimalin-demo.myshopify.com/cdn/shop/files/women-s-fashion-store-shopping-center_2_1170x.jpg?v=1691771661');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    /* Optional: Limit the maximum width */
+    min-height: 700px;
+    min-width: 70px;
+    /* margin: 0px 0px 80px; Center the image within the parent container */
+    position: relative;
+  }
+  .play-btn {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .play-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #007bff;
+  }
+.modal-content {
+    background: transparent;
+
+}
+.carousel-inner{
+    background-color : #e7e7e7;
+    border-radius: 20px;
+    height:auto;
+    padding-top: 50px;
+    min-width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+
+    
+}
+.slider-texts{
+    font-size: 28px;
+    margin-bottom: 42px;
+    padding: 10px;
+    width: 960px;
+}
+.slider-headers{
+    margin-bottom: 15px;
+}
+.fas{
+    font-size: 40px;
+    color: #0a85d1;
+}
+.slick-slide img{
+    width: 20%;
+    height: auto;
+    display: block;
+}
