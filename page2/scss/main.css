@@ -1,0 +1,52 @@
+a {
+  text-decoration: none;
+}
+
+.home-text {
+  color: #303030;
+}
+
+.about-us-text {
+  color: #0a85d1;
+}
+
+.first-sec-main {
+  background-color: #e7e7e7;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.image-container img {
+  width: 90%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 7%;
+}
+.image-container a {
+  color: #05131b;
+  font-weight: 500;
+  font-size: large;
+}
+.image-container a:hover {
+  color: #0a85d1;
+}
+
+.foot {
+  background-color: #e7e7e7 !important;
+}
+.foot a p {
+  font-family: sans-serif;
+}
+.foot a p:hover {
+  color: #0a85d1;
+}
+.foot p {
+  font-family: sans-serif;
+}
+
+.copyrightsec {
+  background-color: #e7e7e7;
+}/*# sourceMappingURL=main.css.map */
