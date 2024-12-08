@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Futura";
+  src: url("/Assets/futura/Futura\ Book\ font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/Assets/futura/Futura\ Bold\ font.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/Assets/futura/Futura\ Book\ Italic\ font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/Assets/futura/Futura\ Bold\ Italic\ font.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/Assets/futura/Futura\ Light\ font.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/Assets/futura/Futura\ Extra\ Black\ font.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("/Assets/futura/futura\ medium\ bt.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
