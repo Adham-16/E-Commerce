@@ -133,5 +133,11 @@ document.getElementById("subscribeForm").addEventListener("submit", function (ev
         alert("Subscription successful!"); // Success message (can be replaced by actual logic)
     }
 });
+document.querySelector('.nav-item.dropdown a').addEventListener('click', function(event) {
+    if (!this.classList.contains('dropdown-toggle')) {
+        window.location.href = this.href; // Redirect to the link's href
+    }
+});
+
 
 

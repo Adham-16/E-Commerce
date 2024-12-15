@@ -1,951 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="./bootstrap/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
-      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="Assets/CSS/fonts.css" />
-    <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css" />
-    <link rel="stylesheet" href="Assets/CSS/all.min.css" />
-    <link rel="stylesheet" href="Assets/CSS/style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="./bootstrap/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Assets/CSS/fonts.css" />
+  <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="Assets/CSS/all.min.css" />
+  <link rel="stylesheet" href="Assets/CSS/style.css" />
+</head>
+
+<body>
+    <!-------------------------------- the start of navbar ------------------------------------->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top ">
+
+      <div class="container-sm">
+
+
+        <!-- Navbar Toggler: Visible on small screens to toggle the sidebar -->
+        <button class="navbar-toggler border-0 order-1 d-block d-xl-none" type="button" id="toggle-sidebar">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Sidebar -->
+        <!-- Sidebar: Collapsible navigation menu -->
         <div class="sidebar" id="sidebar">
+          <!-- Close Button: Closes the sidebar -->
           <button id="close-sidebar" class="close-btn">&times;</button>
+
+          <!-- Navigation Links -->
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="Product-Page.html">Shop</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="collections.html">Categories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="collections.html">Products</a>
+              <a class="nav-link" href="Product-Page.html">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog-details.html">Blogs</a>
+              <a class="nav-link" href="Blog-Details.html">Blogs</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog-Details.html">Pages</a>
+            </li>
           </ul>
         </div>
 
-        <a
-          class="navbar-brand px-5 order-2 order-md-2 order-lg-1 order-xl-1"
-          href="index.html"
-        >
-          <span class="brand-main">Minimal</span
-          ><span class="brand-highlight">in</span>
+
+
+        <!-- Brand Logo or Name -->
+
+        <a class="navbar-brand  order-2 order-md-2 order-lg-1 order-xl-1 theme-logo " href="index.html">
+          <!-- Main part of the brand name -->
+          <img src="https://minimalin-demo.myshopify.com/cdn/shop/files/logo-simple_150x.png?v=1692805162"
+            loading="lazy" alt="Minimalin" style="margin: 0;">
         </a>
 
-        <div
-          class="order-3 order-lg-3 order-xl-3 nav-btns d-flex py-2 me-5 mt-3"
-        >
+
+
+        <div class=" nav-btns d-flex py-2 mt-3 order-3 order-lg-3 order-xl-3 order-sm-3 order-xs-3 navicons ">
+          <!-- Dropdown for Country and Currency Selection (Visible on Extra-Large Screens) -->
           <div class="d-none d-xl-block">
-            <ul class="nav-item dropdown px-3">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                data-bs-toggle="dropdown"
-                >EG (EGP ج.م)</a
-              >
+            <ul class="nav-item dropdown">
+              <!-- Dropdown Toggle -->
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                EG (EGP ج.م)
+              </a>
+              <!-- Dropdown Menu -->
               <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#"
-                    >Afghanistan (AFN ؋)</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#"
-                    >Åland Islands (EUR €)</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#"
-                    >Albania (ALL L)</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#"
-                    >Algeria (DZD د.ج)</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#"
-                    >Andorra (EUR €)</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#"
-                    >Angola (USD $)</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#"
-                    >Anguilla (XCD $)</a
-                  >
-                </li>
+                <!-- Country and Currency Options -->
+                <li><a class="dropdown-item listofsubtitle" href="#">Afghanistan (AFN ؋)</a></li>
+                <li><a class="dropdown-item listofsubtitle" href="#">Åland Islands (EUR €)</a></li>
+                <li><a class="dropdown-item listofsubtitle" href="#">Albania (ALL L)</a></li>
+                <li><a class="dropdown-item listofsubtitle" href="#">Algeria (DZD د.ج)</a></li>
+                <li><a class="dropdown-item listofsubtitle" href="#">Andorra (EUR €)</a></li>
+                <li><a class="dropdown-item listofsubtitle" href="#">Angola (USD $)</a></li>
+                <li><a class="dropdown-item listofsubtitle" href="#">Anguilla (XCD $)</a></li>
               </ul>
             </ul>
           </div>
-          <a href="#" class="me-3 iconscolor">
-            <i class="bi bi-search"></i>
+
+          <a href="#" class=" iconscolor  ">
+            <!-- Icon for search, using Bootstrap's bi-search icon -->
+            <i class="bi bi-search p-0"></i>
           </a>
-          <a href="#" class="iconscolor">
-            <ul class="nav-item dropdown px-3">
+          <!-- End of the search icon link -->
+
+          <a href="#" class="iconscolor  ">
+            <!-- Dropdown for user account options -->
+            <ul class="nav-item dropdown ">
+              <!-- Icon for user profile, using Bootstrap's bi-person icon -->
               <i class="bi bi-person"></i>
+
+              <!-- Dropdown menu for user options -->
               <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="index.html"
-                    >My account</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#">Wishlist</a>
-                </li>
-                <li>
-                  <a class="dropdown-item listofsubtitle" href="#">Login</a>
-                </li>
+                <!-- Option 1: My account -->
+                <li><a class="dropdown-item listofsubtitle" href="#">My account</a></li>
+                <!-- Option 2: Wishlist -->
+                <li><a class="dropdown-item listofsubtitle" href="#">Wishlist</a></li>
+                <!-- Option 3: Login -->
+                <li><a class="dropdown-item listofsubtitle" href="#">Login</a></li>
               </ul>
             </ul>
           </a>
-          <div class="cart-icon position-relative">
+
+          <div class="cart-icon position-relative ">
+            <!-- Link for the cart icon -->
             <a href="#" class="iconscolor">
+              <!-- Bootstrap cart icon -->
               <i class="bi bi-cart"></i>
-              <span
-                class="cart-count position-absolute top-0 start-100 translate-middle badge bg-light text-dark"
-                >0</span
-              >
+
+              <!-- Badge for displaying the cart count -->
+              <span class="cart-count position-absolute top-0 start-100 translate-middle badge bg-light text-dark">
+                0
+              </span>
             </a>
           </div>
+
         </div>
 
+
+
+
         <div class="d-none d-xl-block order-xl-2">
+
           <div class="collapse navbar-collapse" id="navMenu">
+
             <ul class="navbar-nav mx-auto text-center">
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="index.html"
-                  data-bs-toggle="dropdown"
-                  >Home</a
-                >
-                <ul
-                  class="dropdown-menu pb-0 h-auto mega-menu-custom-for-small"
-                  aria-labelledby="categoriesDropdown"
-                >
+                <!-- Regular link for "Home" -->
+                <a class="nav-link dropdown-toggle" href="index.html" id="categoriesDropdown" role="button"
+                  aria-expanded="false">
+                  Home
+                </a>
+
+                <!-- Dropdown menu for "Home" with custom styling -->
+                <ul class="dropdown-menu mega-menu-custom-for-small" aria-labelledby="categoriesDropdown">
                   <li>
                     <div class="container-fluid">
-                      <div class="row mb-0">
-                        <div class="col-md-6">
-                          <a href="index.html" class="subtitle">Niche Demos </a>
-                          <hr />
-                          <a href="index.html" class="listofsubtitle"
-                            >Fashion 1
-                          </a>
-                          <br />
-                          <a href="index.html" class="listofsubtitle"
-                            >Fashion 2</a
-                          >
-                          <br />
-                          <a href="index.html" class="listofsubtitle"
-                            >Fashion 3</a
-                          >
-                          <br />
-                          <a href="index.html" class="listofsubtitle"
-                            >Beauty & cosmetics</a
-                          >
-                          <br />
-                          <a href="" class="listofsubtitle">jewelry</a>
-                          <br />
-                          <a href="" class="listofsubtitle">T-shirts</a>
-                          <br />
-                          <a href="" class="listofsubtitle">Electronics</a>
-                          <br />
-                          <a href="" class="listofsubtitle">Single Product</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="index.html" class="subtitle"
-                            >Global Demos
-                          </a>
-                          <hr />
-                          <br />
-                          <a href="" class="listofsubtitle">Animations</a>
-                          <br />
-
-                          <a href="" class="listofsubtitle">Dark</a>
-
-                          <br />
-                          <a href="" class="listofsubtitle">RTL</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown px-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="collections.html"
-                  data-bs-toggle="dropdown"
-                  >Shop</a
-                >
-                <span
-                  class="menu-item-badge position-absolute top-0 text-light translate-middle"
-                  >New</span
-                >
-                <ul
-                  class="dropdown-menu mega-menu h-auto pb-0"
-                  aria-labelledby="categoriesDropdown"
-                >
-                  <li>
-                    <div class="container">
-                      <div class="row mb-0">
-                        <div class="col-md-3">
-                          <a href="collections.html" class="subtitle"
-                            >Women's Fashion</a
-                          >
-                          <hr />
-                          <a href="collections.html" class="listofsubtitle"
-                            >Dresses
-                          </a>
-                          <br />
-                          <a href="collections.html" class="listofsubtitle"
-                            >Tops & Blouses</a
-                          >
-                          <br />
-                          <a href="collections.html" class="listofsubtitle"
-                            >sweaters & cardigans</a
-                          >
-                          <br />
-                          <a href="collections.html" class="listofsubtitle"
-                            >jackets & coats</a
-                          >
-                          <br />
-                          <a href="collections.html" class="listofsubtitle"
-                            >pants & jeans</a
-                          >
-                          <br />
-                          <a href="collections.html" class="listofsubtitle"
-                            >skirts</a
-                          >
-                          <br />
-                          <a href="collections.html" class="listofsubtitle"
-                            >activewear</a
-                          >
-                          <br />
-                          <a href="v" class="listofsubtitle"
-                            >lingerie & sleepwear</a
-                          >
-                        </div>
-                        <div class="col-md-3">
-                          <a href="collections.html" class="subtitle"
-                            >Men's Fashion
-                          </a>
-                          <hr />
-                          <a href="collections.html" class="listofsubtitle"
-                            >shirts</a
-                          >
-                          <br />
-
-                          <a href="collections.html" class="listofsubtitle"
-                            >t-shirts & polos</a
-                          >
-
-                          <br />
-                          <a href="" class="listofsubtitle"
-                            >sweaters & hoodies</a
-                          >
-                          <br />
-                          <a href="" class="listofsubtitle"
-                            >jackets & blazers</a
-                          >
-                          <br />
-                          <a href="" class="listofsubtitle">pants & chinos</a>
-                          <br />
-                          <a href="" class="listofsubtitle">jeans</a>
-                          <br />
-                          <a href="" class="listofsubtitle"
-                            >suits & formalwear</a
-                          >
-                          <br />
-                          <a href="" class="listofsubtitle">acrivewear</a>
-                        </div>
-                        <div class="col-md-3">
-                          <a href="" class="subtitle">Accessories </a>
-                          <hr />
-                          <a href="" class="listofsubtitle">bags & purses</a>
-                          <br />
-                          <a href="" class="listofsubtitle">hats & caps</a>
-                          <br />
-                          <a href="" class="listofsubtitle">scarves & shawls</a>
-                          <br />
-                          <a href="" class="listofsubtitle"
-                            >belts & suspenders</a
-                          >
-                          <br />
-                          <a href="" class="listofsubtitle">sunglasses</a>
-                          <br />
-                          <a href="" class="listofsubtitle">jewelry</a>
-                          <br />
-                          <a href="" class="listofsubtitle">watchies</a>
-                        </div>
-                        <div class="col-md-3">
-                          <a href="" class="subtitle">Footwear </a>
-                          <hr />
-                          <a href="" class="listofsubtitle">flats & loafers</a>
-                          <br />
-                          <a href="" class="listofsubtitle">heels & pumps</a>
-                          <br />
-                          <a href="" class="listofsubtitle"
-                            >sneakers & athletic</a
-                          >
-                          <br />
-                          <a href="" class="listofsubtitle">dress shoes</a>
-                          <br />
-                          <a href="" class="listofsubtitle">casual shoes</a>
-                          <br />
-                          <a href="" class="listofsubtitle">boots & chukkas</a>
-                          <br />
-                          <a href="" class="listofsubtitle">sandals & slides</a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown px-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="collections.html"
-                  data-bs-toggle="dropdown"
-                  >Categories</a
-                >
-                <span
-                  class="menu-item-badge position-absolute top-0 text-light translate-middle bg-primary"
-                  >Hot</span
-                >
-                <ul
-                  class="dropdown-menu mega-menu"
-                  aria-labelledby="categoriesDropdown"
-                >
-                  <li>
-                    <div class="container">
                       <div class="row">
+                        <!-- First column for Niche Demos -->
+                        <div class="col-md-6">
+                          <a href="" class="subtitle">Niche Demos</a>
+                          <hr>
+                          <br>
+                          <a href="" class="listofsubtitle">Fashion 1</a>
+                          <br>
+                          <a href="" class="listofsubtitle">Fashion 2</a>
+                          <br>
+                          <a href="" class="listofsubtitle">Fashion 3</a>
+                          <br>
+                          <a href="" class="listofsubtitle">Beauty & cosmetics</a>
+                          <br>
+                          <a href="" class="listofsubtitle">Jewelry</a>
+                          <br>
+                          <a href="" class="listofsubtitle">T-shirts</a>
+                          <br>
+                          <a href="" class="listofsubtitle">Electronics</a>
+                          <br>
+                          <a href="" class="listofsubtitle">Single Product</a>
+                          <br>
+                        </div>
+
+                        <!-- Second column for Global Demos -->
+                        <div class="col-md-6">
+                          <a href="" class="subtitle">Global Demos</a>
+                          <hr>
+                          <br>
+                          <a href="" class="listofsubtitle">Animations</a>
+                          <br>
+                          <a href="" class="listofsubtitle">Dark</a>
+                          <br>
+                          <a href="" class="listofsubtitle">RTL</a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown px-3">
+                <!-- Dropdown link for "Shop" -->
+                <a class="nav-link dropdown-toggle" href="Product-Page.html" id="shopDropdown" role="button"
+                  aria-expanded="false">
+                  Shop
+                </a>
+
+                <!-- Badge indicating "New" next to the dropdown -->
+                <span class="menu-item-badge position-absolute top-0 text-light translate-middle">New</span>
+
+                <!-- Dropdown menu for "Shop" with multiple categories -->
+                <ul class="dropdown-menu mega-menu" aria-labelledby="shopDropdown">
+                  <li>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <!-- Column for Women's Fashion -->
                         <div class="col-md-3">
-                          <a href="collections.html" class="subtitle"
-                            >Featured Product</a
-                          >
+                          <a href="" class="subtitle">Women's Fashion</a>
+                          <hr>
+                          <br>
+                          <a href="" class="listofsubtitle">Dresses</a><br>
+                          <a href="" class="listofsubtitle">Tops & Blouses</a><br>
+                          <a href="" class="listofsubtitle">Sweaters & Cardigans</a><br>
+                          <a href="" class="listofsubtitle">Jackets & Coats</a><br>
+                          <a href="" class="listofsubtitle">Pants & Jeans</a><br>
+                          <a href="" class="listofsubtitle">Skirts</a><br>
+                          <a href="" class="listofsubtitle">Activewear</a><br>
+                          <a href="" class="listofsubtitle">Lingerie & Sleepwear</a><br>
+                        </div>
+
+                        <!-- Column for Men's Fashion -->
+                        <div class="col-md-3">
+                          <a href="" class="subtitle">Men's Fashion</a>
+                          <hr>
+                          <br>
+                          <a href="" class="listofsubtitle">Shirts</a><br>
+                          <a href="" class="listofsubtitle">T-shirts & Polos</a><br>
+                          <a href="" class="listofsubtitle">Sweaters & Hoodies</a><br>
+                          <a href="" class="listofsubtitle">Jackets & Blazers</a><br>
+                          <a href="" class="listofsubtitle">Pants & Chinos</a><br>
+                          <a href="" class="listofsubtitle">Jeans</a><br>
+                          <a href="" class="listofsubtitle">Suits & Formalwear</a><br>
+                          <a href="" class="listofsubtitle">Activewear</a><br>
+                        </div>
+
+                        <!-- Column for Accessories -->
+                        <div class="col-md-3">
+                          <a href="" class="subtitle">Accessories</a>
+                          <hr>
+                          <br>
+                          <a href="" class="listofsubtitle">Bags & Purses</a><br>
+                          <a href="" class="listofsubtitle">Hats & Caps</a><br>
+                          <a href="" class="listofsubtitle">Scarves & Shawls</a><br>
+                          <a href="" class="listofsubtitle">Belts & Suspenders</a><br>
+                          <a href="" class="listofsubtitle">Sunglasses</a><br>
+                          <a href="" class="listofsubtitle">Jewelry</a><br>
+                          <a href="" class="listofsubtitle">Watches</a><br>
+                        </div>
+
+                        <!-- Column for Footwear -->
+                        <div class="col-md-3">
+                          <a href="" class="subtitle">Footwear</a>
+                          <hr>
+                          <br>
+                          <a href="" class="listofsubtitle">Flats & Loafers</a><br>
+                          <a href="" class="listofsubtitle">Heels & Pumps</a><br>
+                          <a href="" class="listofsubtitle">Sneakers & Athletic</a><br>
+                          <a href="" class="listofsubtitle">Dress Shoes</a><br>
+                          <a href="" class="listofsubtitle">Casual Shoes</a><br>
+                          <a href="" class="listofsubtitle">Boots & Chukkas</a><br>
+                          <a href="" class="listofsubtitle">Sandals & Slides</a><br>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown px-3">
+                <!-- Dropdown link for "Categories" -->
+                <a class="nav-link dropdown-toggle" href="collections.html" id="categoriesDropdown" role="button"
+                  aria-expanded="false">
+                  Categories
+                </a>
+
+                <!-- Badge indicating "Hot" next to the dropdown -->
+                <span class="menu-item-badge position-absolute top-0 text-light translate-middle bg-primary">Hot</span>
+
+                <!-- Dropdown menu for "Categories" with multiple product categories -->
+                <ul class="dropdown-menu mega-menu" aria-labelledby="categoriesDropdown">
+                  <li>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <!-- Column for Featured Product -->
+                        <div class="col-md-3">
+                          <a class="subtitle">Featured Product</a>
                           <img
                             src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_12_large.png?v=1692615909"
-                            class="img-fluid"
-                            alt="Featured Product"
-                          />
+                            class="img-fluid" alt="New Arrivals">
                         </div>
+
+                        <!-- Column for New Arrivals -->
                         <div class="col-md-3">
-                          <a href="collections.html" class="subtitle"
-                            >New Arrivals</a
-                          >
+                          <a class="subtitle">New Arrivals</a>
                           <img
                             src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_1_large.png?v=1692616267"
-                            class="img-fluid"
-                            alt="New Arrivals"
-                          />
+                            class="img-fluid" alt="New Arrivals">
                         </div>
+
+                        <!-- Column for Summer Styles -->
                         <div class="col-md-3">
-                          <a href="collections.html" class="subtitle"
-                            >Summer Styles</a
-                          >
+                          <a class="subtitle">Summer Styles</a>
                           <img
                             src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_15_large.png?v=1692617739"
-                            class="img-fluid"
-                            alt="Summer Styles"
-                          />
+                            class="img-fluid" alt="Summer Styles">
                         </div>
+
+                        <!-- Column for Winter Fashion -->
                         <div class="col-md-3">
-                          <a href="collections.html" class="subtitle"
-                            >Winter Fashion</a
-                          >
+                          <a class="subtitle">Winter Fashion</a>
                           <img
                             src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_19_large.png?v=1692619758"
-                            class="img-fluid"
-                            alt="Winter Fashion"
-                          />
+                            class="img-fluid" alt="Winter Fashion">
                         </div>
                       </div>
+
+                      <!-- Row for additional categories -->
                       <div class="row mt-3">
+                        <!-- Column for Accessories -->
                         <div class="col-md-3">
-                          <a href="collections.html" class="subtitle"
-                            >Accessories</a
-                          >
+                          <a class="subtitle">Accessories</a>
                           <img
                             src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_8_large.png?v=1692607569"
-                            class="img-fluid"
-                            alt="Accessories"
-                          />
+                            class="img-fluid" alt="Accessories">
                         </div>
+
+                        <!-- Column for Footwear -->
                         <div class="col-md-3">
-                          <a href="collections.html" class="subtitle"
-                            >Footwear</a
-                          >
+                          <a class="subtitle">Footwear</a>
                           <img
                             src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_20_large.png?v=1692620463"
-                            class="img-fluid"
-                            alt="Footwear"
-                          />
+                            class="img-fluid" alt="Footwear">
                         </div>
+
+                        <!-- Column for Men -->
                         <div class="col-md-3">
-                          <a href="collections.html" class="subtitle">Men</a>
+                          <a class="subtitle">Men</a>
                           <img
                             src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_4_large.png?v=1692607334"
-                            class="img-fluid"
-                            alt="Men"
-                          />
+                            class="img-fluid" alt="Men">
                         </div>
+
+                        <!-- Column for Women -->
                         <div class="col-md-3">
-                          <a href="collections.html" class="subtitle">Women</a>
+                          <a class="subtitle">Women</a>
                           <img
                             src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_10_large.png?v=1692607375"
-                            class="img-fluid"
-                            alt="Women"
-                          />
+                            class="img-fluid" alt="Women">
                         </div>
                       </div>
                     </div>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item dropdown px-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="product-page.html"
-                  data-bs-toggle="dropdown"
-                  >Product</a
-                >
+
+
+              <li class="nav-item dropdown px-3">
+                <!-- Dropdown link for "Product" -->
+                <a class="nav-link dropdown-toggle" href="Product-Page.html" id="categoriesDropdown" role="button"
+                  aria-expanded="false">
+                  Product
+                </a>
+
+
+                <!-- Dropdown menu for "Product" with various product-related options -->
                 <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >variant images</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >unit price</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >pre-order product</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >countdown</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >complementary</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#">video</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >ar/3D model</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >gift card</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item listofsubtitle" href="#">variant images</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="#">unit price</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="#">pre-order product</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="#">countdown</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="#">complementary</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="#">video</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="#">ar/3D model</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="#">gift card</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown px-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="product-page.html"
-                  data-bs-toggle="dropdown"
-                  >Blog</a
-                >
+
+
+
+              <li class="nav-item dropdown px-3">
+                <!-- Dropdown link for "Blog" -->
+                <a class="nav-link dropdown-toggle" href="Blog-Details.html" id="categoriesDropdown" role="button"
+                  aria-expanded="false">
+                  Blog
+                </a>
+
+
+                <!-- Dropdown menu for "Blog" with different blog layout options -->
                 <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                  <li>
-                    <a
-                      class="dropdown-item listofsubtitle"
-                      href="product-page.html"
-                      >Blog (Default)</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item listofsubtitle"
-                      href="product-page.html"
-                      >Blog (Service)</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item listofsubtitle" href="Blog-Details.html">Blog (Default)</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="Blog-Details.html">Blog (Service)</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown px-1">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="about-us.html"
-                  data-bs-toggle="dropdown"
-                  >Pages</a
-                >
+
+              <li class="nav-item dropdown px-3">
+                <!-- Dropdown link for "Pages" -->
+                <a class="nav-link dropdown-toggle" href="Product-Page.html" id="categoriesDropdown" role="button"
+                  aria-expanded="false">
+                  Pages
+                </a>
+
+
+                <!-- Dropdown menu for "Pages" -->
                 <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="about-us.html"
-                      >Contact</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >About us</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#">Service</a>
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item listofsubtitle"
-                      href="frequently-asked-questions.html"
-                      >FAQ</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >Size Chart</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item listofsubtitle" href="#"
-                      >Purchase Now</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item listofsubtitle" href="About-us.html">Contact</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="About-us.html">About us</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="About-us.html">Service</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="frequently-asked-questions.html">FAQ</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="index.html">Size Chart</a></li>
+                  <li><a class="dropdown-item listofsubtitle" href="Product-Page.html">Purchase Now</a></li>
                 </ul>
               </li>
+
             </ul>
+
           </div>
         </div>
       </div>
     </nav>
-    <main>
-      <!-- about us text -->
-      <section class="first-sec-main p-3">
-        <div
-          class="container d-flex flex-column justify-content-center align-items-center"
-        >
-          <div class="row">
-            <div class="col-sm-12">
-              <h1>About us</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-auto">
-              <span
-                ><a href="..." class="home-text text-decoration-none"> Home </a>
-                /
-              </span>
-            </div>
-            <div class="col-auto m-0 p-0">
-              <p class="about-us-text">About us</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Minimalin E-Commerce section -->
-      <section class="Minimalin-E-Commerce">
-        <div class="container">
-          <div class="row flex-column flex-lg-row">
-            <div class="col-lg-6 align-self-center pb-3">
-              <h2 class="fw-bold paragraph1-header">
-                Minimal<span class="in-color">in</span>
-                E-Commerce
-              </h2>
-              <div>
-                <p class="paragraph1-section">
-                  Minimalin E-Commerce is a dynamic and innovative online retail
-                  platform that offers a wide range of products to customers
-                  worldwide. Established in 1191, our company has rapidly grown
-                  to become a prominent player in the eCommerce industry. Our
-                  mission is to provide customers with a seamless and convenient
-                  shopping experience while offering a diverse selection of
-                  high-quality products.
-                </p>
-                <p class="paragraph1-section">
-                  Minimalin E-Commerce is dedicated to setting new standards in
-                  the eCommerce landscape, providing convenience, choice, and
-                  quality to our valued customers.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 paragraph1-img align-self-center">
-              <img
-                src="https://minimalin-demo.myshopify.com/cdn/shop/files/owner-getting-ready-reopening_770x.jpg?v=1691770343"
-                alt="image of place is not found"
-                class="img-fluid img-paragraph1-prop"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- video area start -->
-      <section class="video-section py-5">
-        <div class="container px-3">
-          <div class="row justify-content-center">
-            <div class="col-lg-12">
-              <div class="video-bg position-relative">
-                <!-- Play Button -->
-                <div class="main-play-btn">
-                  <div
-                    class="play-btn d-flex justify-content-center align-items-center"
-                    target="_blank"
-                    data-bs-toggle="modal"
-                    data-bs-target="#videoModal"
-                  >
-                    <i class="fa fa-play fs-6"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="modal fade justify-content-center align-self-center"
-          id="videoModal"
-          tabindex="-1"
-          aria-labelledby="videoModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="btn-close text-white"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body p-0">
-                <div class="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/7m16dFI1AF8"
-                    title="YouTube video"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- video area end -->
-
-      <!-- slider section start -->
-      <div class="container mt-5 slider">
-        <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicators/Dots -->
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#textCarousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#textCarousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#textCarousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <!-- Carousel Slides -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-              >
-                <i class="fas fa-quote-right"></i>
-                <p class="text-center lh-lg slider-texts">
-                  Discovering Minimalin has been a revelation for me. As a busy
-                  professional, I often find myself juggling multiple tasks and
-                  struggling to find the right words.
-                </p>
-                <h2 class="slider-headers">Alex Rodriguez</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-              >
-                <i class="fas fa-quote-right"></i>
-                <p class="text-center lh-lg slider-texts">
-                  EMinimalin is pure genius! I'm a student, and writing
-                  assignments used to be a daunting task. But with ChatGPT, it's
-                  like having a personal tutor and writing coach by my side
-                  24/7.
-                </p>
-                <h2 class="slider-headers">Jessica Patel</h2>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-              >
-                <i class="fas fa-quote-right"></i>
-                <p class="text-center lh-lg slider-texts">
-                  Writing has never been my strong suit, but ChatGPT has changed
-                  the game for me. Whether it's crafting compelling emails,
-                  creative stories, or engaging social media posts.
-                </p>
-                <h2 class="slider-headers">Michael Chen</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- last section -->
-      <section class="p-5">
-        <div class="responsive d-flex justify-content-between px-3">
-          <div class="img-responsiv">
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-1_medium.png?v=1691860051"
-              alt="Image 1"
-            />
-          </div>
-          <div class="img-responsiv">
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-2_medium.png?v=1691860159"
-              alt="Image 2"
-            />
-          </div>
-          <div class="img-responsiv">
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-3_medium.png?v=1691860216"
-              alt="Image 3"
-            />
-          </div>
-          <div class="img-responsiv">
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-4_medium.png?v=1691860422"
-              alt="Image 4"
-            />
-          </div>
-          <div class="img-responsiv">
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-5_medium.png?v=1691860440"
-              alt="Image 5"
-            />
-          </div>
-          <div class="img-responsiv">
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-9_medium.png?v=1691860502"
-              alt="Image 6"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="bg-light pt-5 foot">
-      <div class="container">
+  </header>
+<!---------------------------------------- end of navbar ---------------------------------->
+  <main>
+    <!-- about us text -->
+    <section class="first-sec-main p-3">
+      <div class="container d-flex flex-column justify-content-center align-items-center">
         <div class="row">
-          <div class="col-lg-6 col-md-6 textdec mb-4">
-            <a class="mb-2 text-dark titles fw-bold p-4 ps-3 fs-4">About Us.</a>
-            <p class="text-dark py-3 px-3 pb-0 w-75 fs-6">
-              Minimal E-Commerce is a dynamic and innovative online retail
-              platform that offers a wide range of products to customers
-              worldwide.
-            </p>
-            <div class="d-flex pt-1 pb-3 px-4">
-              <a href="https://www.facebook.com/"
-                ><i class="bi bi-facebook pe-4 text-dark"></i
-              ></a>
-              <a href="https://x.com/"
-                ><i class="bi bi-twitter pe-4 text-dark"></i
-              ></a>
-              <a href="https://www.youtube.com/">
-                <i class="bi bi-youtube pe-4 text-dark"></i
-              ></a>
-              <a href="https://www.instagram.com/"
-                ><i class="bi bi-instagram pe-4 text-dark"></i
-              ></a>
-              <a href="https://www.tiktok.com/"
-                ><i class="bi bi-tiktok pe-4 text-dark"></i
-              ></a>
-            </div>
-            <p class="fw-medium px-3 fs-6">Guaranteed safe checkout</p>
-            <div class="d-flex px-3">
-              <img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
-                class="pe-2"
-              />
-              <img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
-                class="pe-2"
-                alt=""
-              />
-              <img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/bitcoin-e41278677541fc32b8d2e7fa41e61aaab2935151a6048a1d8d341162f5b93a0a.svg"
-                class="pe-2"
-                alt=""
-              />
-              <img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
-                class="pe-2"
-                alt=""
-              />
-              <img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
-                class="pe-2"
-                alt=""
-              />
-              <img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
-                class="pe-2"
-                alt=""
-              />
-            </div>
+          <div class="col-sm-12">
+            <h1>About us</h1>
           </div>
-
-          <div class="col-lg-2 col-6 mb-4">
-            <p class="text-dark titles fs-5 fw-bold">Quick Link</p>
-            <a href="index.html" class="text-dark d-block mb-3">
-              <p>My Account</p>
-            </a>
-            <a href="index.html" class="text-dark d-block mb-3">
-              <p>My Cart</p>
-            </a>
-            <a href="#" class="text-dark d-block mb-3">
-              <p>Wishlist</p>
-            </a>
-            <a href="#" class="text-dark d-block mb-3">
-              <p>Gift Card</p>
-            </a>
-            <a
-              href="frequently-asked-questions.html"
-              class="text-dark d-block mb-3"
-            >
-              <p>Need Help?</p>
-            </a>
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <span><a href="..." class="home-text text-decoration-none"> Home </a>
+              /
+            </span>
           </div>
-
-          <div class="col-lg-2 col-6 mb-4">
-            <p class="text-dark titles fw-bold fs-5">Information</p>
-            <a href="about-us.html" class="text-dark d-block mb-3 textnav">
-              <p>About us</p>
-            </a>
-            <a href="about-us.html" class="text-dark d-block mb-3 textnav">
-              <p>Contact</p>
-            </a>
-            <a href="blog-details.html" class="text-dark d-block mb-3">
-              <p>Blogs</p>
-            </a>
-            <a href="#" class="text-dark d-block mb-3">
-              <p>Size Chart</p>
-            </a>
-            <a
-              href="frequently-asked-questions.html"
-              class="text-dark d-block mb-3"
-            >
-              <p>FAQ</p>
-            </a>
-          </div>
-
-          <div class="col-lg-2 col-6 mb-4">
-            <p class="text-dark titles fw-bold fs-5">Policies</p>
-            <a href="#" class="text-dark d-block mb-3 textnav">
-              <p>Privacy Policy</p>
-            </a>
-            <a href="#" class="text-dark d-block mb-3 textnav">
-              <p>Refund Policy</p>
-            </a>
-            <a
-              href="frequently-asked-questions.html"
-              class="text-dark d-block mb-3"
-            >
-              <p>Terms of Service</p>
-            </a>
-            <a href="#" class="text-dark d-block mb-3">
-              <p>Shipping Policy</p>
-            </a>
-            <a href="about-us.html" class="text-dark d-block mb-3">
-              <p>Contact Information</p>
-            </a>
+          <div class="col-auto m-0 p-0">
+            <p class="about-us-text">About us</p>
           </div>
         </div>
       </div>
-      <br />
-      <hr />
-
-      <div
-        class="align-items-center flex-column d-flex justify-content-center mt-3 copyrightsec"
-      >
-        <p class="text-dark d-block">
-          © Copyright <strong>Minimalin</strong> . All rights reserved.
-        </p>
+    </section>
+    <!-- Minimalin E-Commerce section -->
+    <section class="Minimalin-E-Commerce">
+      <div class="container">
+        <div class="row flex-column flex-lg-row">
+          <div class="col-lg-6 align-self-center pb-3">
+            <h2 class="fw-bold paragraph1-header">
+              Minimal<span class="in-color">in</span>
+              E-Commerce
+            </h2>
+            <div>
+              <p class="paragraph1-section">
+                Minimalin E-Commerce is a dynamic and innovative online retail
+                platform that offers a wide range of products to customers
+                worldwide. Established in 1191, our company has rapidly grown
+                to become a prominent player in the eCommerce industry. Our
+                mission is to provide customers with a seamless and convenient
+                shopping experience while offering a diverse selection of
+                high-quality products.
+              </p>
+              <p class="paragraph1-section">
+                Minimalin E-Commerce is dedicated to setting new standards in
+                the eCommerce landscape, providing convenience, choice, and
+                quality to our valued customers.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 paragraph1-img align-self-center">
+            <img
+              src="https://minimalin-demo.myshopify.com/cdn/shop/files/owner-getting-ready-reopening_770x.jpg?v=1691770343"
+              alt="image of place is not found" class="img-fluid img-paragraph1-prop" />
+          </div>
+        </div>
       </div>
-    </footer>
-    <script src="Assets/JS/bootstrap.bundle.min.js"></script>
-    <script src="Assets/JS/index.js"></script>
-  </body>
+    </section>
+    <!-- video area start -->
+    <section class="video-section py-5">
+      <div class="container px-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="video-bg position-relative">
+              <!-- Play Button -->
+              <div class="main-play-btn">
+                <div class="play-btn d-flex justify-content-center align-items-center" target="_blank"
+                  data-bs-toggle="modal" data-bs-target="#videoModal">
+                  <i class="fa fa-play fs-6"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade justify-content-center align-self-center" id="videoModal" tabindex="-1"
+        aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/7m16dFI1AF8" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video area end -->
+
+    <!-- slider section start -->
+    <div class="container mt-5 slider">
+      <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/Dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Carousel Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <i class="fas fa-quote-right"></i>
+              <p class="text-center lh-lg slider-texts">
+                Discovering Minimalin has been a revelation for me. As a busy
+                professional, I often find myself juggling multiple tasks and
+                struggling to find the right words.
+              </p>
+              <h2 class="slider-headers">Alex Rodriguez</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <i class="fas fa-quote-right"></i>
+              <p class="text-center lh-lg slider-texts">
+                EMinimalin is pure genius! I'm a student, and writing
+                assignments used to be a daunting task. But with ChatGPT, it's
+                like having a personal tutor and writing coach by my side
+                24/7.
+              </p>
+              <h2 class="slider-headers">Jessica Patel</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <i class="fas fa-quote-right"></i>
+              <p class="text-center lh-lg slider-texts">
+                Writing has never been my strong suit, but ChatGPT has changed
+                the game for me. Whether it's crafting compelling emails,
+                creative stories, or engaging social media posts.
+              </p>
+              <h2 class="slider-headers">Michael Chen</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- last section -->
+    <section class="p-5">
+      <div class="responsive d-flex justify-content-between px-3">
+        <div class="img-responsiv">
+          <img src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-1_medium.png?v=1691860051"
+            alt="Image 1" />
+        </div>
+        <div class="img-responsiv">
+          <img src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-2_medium.png?v=1691860159"
+            alt="Image 2" />
+        </div>
+        <div class="img-responsiv">
+          <img src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-3_medium.png?v=1691860216"
+            alt="Image 3" />
+        </div>
+        <div class="img-responsiv">
+          <img src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-4_medium.png?v=1691860422"
+            alt="Image 4" />
+        </div>
+        <div class="img-responsiv">
+          <img src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-5_medium.png?v=1691860440"
+            alt="Image 5" />
+        </div>
+        <div class="img-responsiv">
+          <img src="https://minimalin-demo.myshopify.com/cdn/shop/files/brand-logo-9_medium.png?v=1691860502"
+            alt="Image 6" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-------------------------------start of footer--------------------->
+  <footer class="bg-light pt-5 foot">
+    <div class="container">
+      <div class="row">
+        <!-- About Us Section -->
+        <div class="col-lg-6 col-md-6 textdec mb-4">
+          <a class="mb-2 text-dark titles fw-bold p-4 ps-3 fs-4">About Us.</a>
+          <p class="text-dark py-3 px-3 pb-0 w-75 fs-6">
+            Minimal E-Commerce is a dynamic and innovative online retail platform that offers a wide range of products
+            to customers worldwide.
+          </p>
+          <!-- Social Media Links -->
+          <div class="d-flex pt-1 pb-3 px-4">
+            <a href="https://www.facebook.com/">
+              <i class="bi bi-facebook pe-4 text-dark"></i>
+            </a>
+            <a href="https://x.com/">
+              <i class="bi bi-twitter pe-4 text-dark"></i>
+            </a>
+            <a href="https://www.youtube.com/">
+              <i class="bi bi-youtube pe-4 text-dark"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="bi bi-instagram pe-4 text-dark"></i>
+            </a>
+            <a href="https://www.tiktok.com/">
+              <i class="bi bi-tiktok pe-4 text-dark"></i>
+            </a>
+          </div>
+          <!-- Guaranteed Safe Checkout Text -->
+          <p class="fw-medium px-3 fs-6">Guaranteed safe checkout</p>
+          <!-- Payment Icons -->
+          <div class="d-flex px-3">
+            <img
+              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+              class="pe-2" />
+            <img
+              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+              class="pe-2" alt="" />
+            <img
+              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/bitcoin-e41278677541fc32b8d2e7fa41e61aaab2935151a6048a1d8d341162f5b93a0a.svg"
+              class="pe-2" alt="" />
+            <img
+              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+              class="pe-2" alt="" />
+            <img
+              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+              class="pe-2" alt="" />
+            <img
+              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+              class="pe-2" alt="" />
+          </div>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="col-lg-2 col-6 mb-4">
+          <p class="text-dark titles fs-5 fw-bold">Quick Link</p>
+          <a href="index.html" class="text-dark d-block mb-3">
+            <p>My Account</p>
+          </a>
+          <a href="index.html" class="text-dark d-block mb-3">
+            <p>My Cart</p>
+          </a>
+          <a href="#" class="text-dark d-block mb-3">
+            <p>Wishlist</p>
+          </a>
+          <a href="#" class="text-dark d-block mb-3">
+            <p>Gift Card</p>
+          </a>
+          <a href="frequently-asked-questions.html" class="text-dark d-block mb-3">
+            <p>Need Help?</p>
+          </a>
+        </div>
+
+        <!-- Information Section -->
+        <div class="col-lg-2 col-6 mb-4">
+          <p class="text-dark titles fw-bold fs-5">Information</p>
+          <a href="about-us.html" class="text-dark d-block mb-3 textnav">
+            <p>About us</p>
+          </a>
+          <a href="about-us.html" class="text-dark d-block mb-3 textnav">
+            <p>Contact</p>
+          </a>
+          <a href="blog-details.html" class="text-dark d-block mb-3">
+            <p>Blogs</p>
+          </a>
+          <a href="#" class="text-dark d-block mb-3">
+            <p>Size Chart</p>
+          </a>
+          <a href="frequently-asked-questions.html" class="text-dark d-block mb-3">
+            <p>FAQ</p>
+          </a>
+        </div>
+
+        <!-- Policies Section -->
+        <div class="col-lg-2 col-6 mb-4">
+          <p class="text-dark titles fw-bold fs-5">Policies</p>
+          <a href="#" class="text-dark d-block mb-3 textnav">
+            <p>Privacy Policy</p>
+          </a>
+          <a href="#" class="text-dark d-block mb-3 textnav">
+            <p>Refund Policy</p>
+          </a>
+          <a href="frequently-asked-questions.html" class="text-dark d-block mb-3">
+            <p>Terms of Service</p>
+          </a>
+          <a href="#" class="text-dark d-block mb-3">
+            <p>Shipping Policy</p>
+          </a>
+          <a href="about-us.html" class="text-dark d-block mb-3">
+            <p>Contact Information</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+
+    <!-- Copyright Section -->
+    <div class="align-items-center flex-column d-flex justify-content-center mt-3 copyrightsec">
+      <p class="text-dark d-block">
+        © Copyright <strong>Minimalin</strong> . All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!--------------------------------------- end of footer----------------------- -->
+  <script src="Assets/JS/bootstrap.bundle.min.js"></script>
+  <script src="Assets/JS/index.js"></script>
+</body>
+
 </html>
