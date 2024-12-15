@@ -1039,7 +1039,7 @@ footer {
 }
 .Minimalin-E-Commerce {
   margin-top: 6em;
-  margin-inline-start: 40px;
+  padding-bottom: 80px;
 }
 .in-color {
   color: #0a85d1;
@@ -1054,7 +1054,6 @@ footer {
   line-height: 1.4;
 }
 .img-paragraph1-prop {
-  max-width: 90%;
   height: auto;
   border-radius: 20px;
 }
