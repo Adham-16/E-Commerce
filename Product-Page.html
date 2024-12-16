@@ -1,1070 +1,1533 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Assets/CSS/fonts.css" />
+    <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="Assets/CSS/all.min.css" />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product Page</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
-    integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="Assets/CSS/fonts.css" />
-  <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css" />
-  <link rel="stylesheet" href="Assets/CSS/all.min.css" />
-  <link rel="stylesheet" href="Assets/CSS/style.css" />
-</head>
+  <body>
+    <!-------------------------------- the start of navbar ------------------------------------->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container-sm">
+          <!-- Navbar Toggler: Visible on small screens to toggle the sidebar -->
+          <button
+            class="navbar-toggler border-0 order-1 d-block d-xl-none"
+            type="button"
+            id="toggle-sidebar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-   <!-------------------------------- the start of navbar ------------------------------------->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top ">
+          <!-- Sidebar: Collapsible navigation menu -->
+          <div class="sidebar" id="sidebar">
+            <!-- Close Button: Closes the sidebar -->
+            <button id="close-sidebar" class="close-btn">&times;</button>
 
-      <div class="container-sm">
-
-
-        <!-- Navbar Toggler: Visible on small screens to toggle the sidebar -->
-        <button class="navbar-toggler border-0 order-1 d-block d-xl-none" type="button" id="toggle-sidebar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Sidebar: Collapsible navigation menu -->
-        <div class="sidebar" id="sidebar">
-          <!-- Close Button: Closes the sidebar -->
-          <button id="close-sidebar" class="close-btn">&times;</button>
-
-          <!-- Navigation Links -->
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Product-Page.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="collections.html">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Product-Page.html">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Blog-Details.html">Blogs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Blog-Details.html">Pages</a>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <!-- Brand Logo or Name -->
-
-        <a class="navbar-brand  order-2 order-md-2 order-lg-1 order-xl-1 theme-logo " href="index.html">
-          <!-- Main part of the brand name -->
-          <img src="https://minimalin-demo.myshopify.com/cdn/shop/files/logo-simple_150x.png?v=1692805162"
-            loading="lazy" alt="Minimalin" style="margin: 0;">
-        </a>
-
-
-
-        <div class=" nav-btns d-flex py-2 mt-3 order-3 order-lg-3 order-xl-3 order-sm-3 order-xs-3 navicons ">
-          <!-- Dropdown for Country and Currency Selection (Visible on Extra-Large Screens) -->
-          <div class="d-none d-xl-block">
-            <ul class="nav-item dropdown">
-              <!-- Dropdown Toggle -->
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                EG (EGP ج.م)
-              </a>
-              <!-- Dropdown Menu -->
-              <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                <!-- Country and Currency Options -->
-                <li><a class="dropdown-item listofsubtitle" href="#">Afghanistan (AFN ؋)</a></li>
-                <li><a class="dropdown-item listofsubtitle" href="#">Åland Islands (EUR €)</a></li>
-                <li><a class="dropdown-item listofsubtitle" href="#">Albania (ALL L)</a></li>
-                <li><a class="dropdown-item listofsubtitle" href="#">Algeria (DZD د.ج)</a></li>
-                <li><a class="dropdown-item listofsubtitle" href="#">Andorra (EUR €)</a></li>
-                <li><a class="dropdown-item listofsubtitle" href="#">Angola (USD $)</a></li>
-                <li><a class="dropdown-item listofsubtitle" href="#">Anguilla (XCD $)</a></li>
-              </ul>
+            <!-- Navigation Links -->
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product-page.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="collections.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product-page.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-details.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-details.html">Pages</a>
+              </li>
             </ul>
           </div>
 
-          <a href="#" class=" iconscolor  ">
-            <!-- Icon for search, using Bootstrap's bi-search icon -->
-            <i class="bi bi-search p-0"></i>
+          <!-- Brand Logo or Name -->
+
+          <a
+            class="navbar-brand order-2 order-md-2 order-lg-1 order-xl-1 theme-logo"
+            href="index.html"
+          >
+            <!-- Main part of the brand name -->
+            <img
+              src="https://minimalin-demo.myshopify.com/cdn/shop/files/logo-simple_150x.png?v=1692805162"
+              loading="lazy"
+              alt="Minimalin"
+              style="margin: 0"
+            />
           </a>
-          <!-- End of the search icon link -->
 
-          <a href="#" class="iconscolor  ">
-            <!-- Dropdown for user account options -->
-            <ul class="nav-item dropdown ">
-              <!-- Icon for user profile, using Bootstrap's bi-person icon -->
-              <i class="bi bi-person"></i>
-
-              <!-- Dropdown menu for user options -->
-              <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                <!-- Option 1: My account -->
-                <li><a class="dropdown-item listofsubtitle" href="#">My account</a></li>
-                <!-- Option 2: Wishlist -->
-                <li><a class="dropdown-item listofsubtitle" href="#">Wishlist</a></li>
-                <!-- Option 3: Login -->
-                <li><a class="dropdown-item listofsubtitle" href="#">Login</a></li>
+          <div
+            class="nav-btns d-flex py-2 mt-3 order-3 order-lg-3 order-xl-3 order-sm-3 order-xs-3 navicons"
+          >
+            <!-- Dropdown for Country and Currency Selection (Visible on Extra-Large Screens) -->
+            <div class="d-none d-xl-block">
+              <ul class="nav-item dropdown">
+                <!-- Dropdown Toggle -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  EG (EGP ج.م)
+                </a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu mega-menu-custom-for-xsmall">
+                  <!-- Country and Currency Options -->
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >Afghanistan (AFN ؋)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >Åland Islands (EUR €)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >Albania (ALL L)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >Algeria (DZD د.ج)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >Andorra (EUR €)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >Angola (USD $)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >Anguilla (XCD $)</a
+                    >
+                  </li>
+                </ul>
               </ul>
-            </ul>
-          </a>
+            </div>
 
-          <div class="cart-icon position-relative ">
-            <!-- Link for the cart icon -->
             <a href="#" class="iconscolor">
-              <!-- Bootstrap cart icon -->
-              <i class="bi bi-cart"></i>
+              <!-- Icon for search, using Bootstrap's bi-search icon -->
+              <i class="bi bi-search p-0"></i>
+            </a>
+            <!-- End of the search icon link -->
 
-              <!-- Badge for displaying the cart count -->
-              <span class="cart-count position-absolute top-0 start-100 translate-middle badge bg-light text-dark">
-                0
-              </span>
+            <a href="#" class="iconscolor">
+              <!-- Dropdown for user account options -->
+              <ul class="nav-item dropdown">
+                <!-- Icon for user profile, using Bootstrap's bi-person icon -->
+                <i class="bi bi-person"></i>
+
+                <!-- Dropdown menu for user options -->
+                <ul class="dropdown-menu mega-menu-custom-for-xsmall">
+                  <!-- Option 1: My account -->
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >My account</a
+                    >
+                  </li>
+                  <!-- Option 2: Wishlist -->
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#"
+                      >Wishlist</a
+                    >
+                  </li>
+                  <!-- Option 3: Login -->
+                  <li>
+                    <a class="dropdown-item listofsubtitle" href="#">Login</a>
+                  </li>
+                </ul>
+              </ul>
+            </a>
+
+            <div class="cart-icon position-relative">
+              <!-- Link for the cart icon -->
+              <a href="#" class="iconscolor">
+                <!-- Bootstrap cart icon -->
+                <i class="bi bi-cart"></i>
+
+                <!-- Badge for displaying the cart count -->
+                <span
+                  class="cart-count position-absolute top-0 start-100 translate-middle badge bg-light text-dark"
+                >
+                  0
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="d-none d-xl-block order-xl-2">
+            <div class="collapse navbar-collapse" id="navMenu">
+              <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item dropdown">
+                  <!-- Regular link for "Home" -->
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="index.html"
+                    id="categoriesDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Home
+                  </a>
+
+                  <!-- Dropdown menu for "Home" with custom styling -->
+                  <ul
+                    class="dropdown-menu mega-menu-custom-for-small"
+                    aria-labelledby="categoriesDropdown"
+                  >
+                    <li>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <!-- First column for Niche Demos -->
+                          <div class="col-md-6">
+                            <a href="" class="subtitle">Niche Demos</a>
+                            <hr />
+                            <br />
+                            <a href="" class="listofsubtitle">Fashion 1</a>
+                            <br />
+                            <a href="" class="listofsubtitle">Fashion 2</a>
+                            <br />
+                            <a href="" class="listofsubtitle">Fashion 3</a>
+                            <br />
+                            <a href="" class="listofsubtitle"
+                              >Beauty & cosmetics</a
+                            >
+                            <br />
+                            <a href="" class="listofsubtitle">Jewelry</a>
+                            <br />
+                            <a href="" class="listofsubtitle">T-shirts</a>
+                            <br />
+                            <a href="" class="listofsubtitle">Electronics</a>
+                            <br />
+                            <a href="" class="listofsubtitle">Single Product</a>
+                            <br />
+                          </div>
+
+                          <!-- Second column for Global Demos -->
+                          <div class="col-md-6">
+                            <a href="" class="subtitle">Global Demos</a>
+                            <hr />
+                            <br />
+                            <a href="" class="listofsubtitle">Animations</a>
+                            <br />
+                            <a href="" class="listofsubtitle">Dark</a>
+                            <br />
+                            <a href="" class="listofsubtitle">RTL</a>
+                            <br />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-3">
+                  <!-- Dropdown link for "Shop" -->
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="product-page.html"
+                    id="shopDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Shop
+                  </a>
+
+                  <!-- Badge indicating "New" next to the dropdown -->
+                  <span
+                    class="menu-item-badge position-absolute top-0 text-light translate-middle"
+                    >New</span
+                  >
+
+                  <!-- Dropdown menu for "Shop" with multiple categories -->
+                  <ul
+                    class="dropdown-menu mega-menu"
+                    aria-labelledby="shopDropdown"
+                  >
+                    <li>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <!-- Column for Women's Fashion -->
+                          <div class="col-md-3">
+                            <a href="" class="subtitle">Women's Fashion</a>
+                            <hr />
+                            <br />
+                            <a href="" class="listofsubtitle">Dresses</a><br />
+                            <a href="" class="listofsubtitle">Tops & Blouses</a
+                            ><br />
+                            <a href="" class="listofsubtitle"
+                              >Sweaters & Cardigans</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Jackets & Coats</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Pants & Jeans</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Skirts</a><br />
+                            <a href="" class="listofsubtitle">Activewear</a
+                            ><br />
+                            <a href="" class="listofsubtitle"
+                              >Lingerie & Sleepwear</a
+                            ><br />
+                          </div>
+
+                          <!-- Column for Men's Fashion -->
+                          <div class="col-md-3">
+                            <a href="" class="subtitle">Men's Fashion</a>
+                            <hr />
+                            <br />
+                            <a href="" class="listofsubtitle">Shirts</a><br />
+                            <a href="" class="listofsubtitle"
+                              >T-shirts & Polos</a
+                            ><br />
+                            <a href="" class="listofsubtitle"
+                              >Sweaters & Hoodies</a
+                            ><br />
+                            <a href="" class="listofsubtitle"
+                              >Jackets & Blazers</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Pants & Chinos</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Jeans</a><br />
+                            <a href="" class="listofsubtitle"
+                              >Suits & Formalwear</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Activewear</a
+                            ><br />
+                          </div>
+
+                          <!-- Column for Accessories -->
+                          <div class="col-md-3">
+                            <a href="" class="subtitle">Accessories</a>
+                            <hr />
+                            <br />
+                            <a href="" class="listofsubtitle">Bags & Purses</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Hats & Caps</a
+                            ><br />
+                            <a href="" class="listofsubtitle"
+                              >Scarves & Shawls</a
+                            ><br />
+                            <a href="" class="listofsubtitle"
+                              >Belts & Suspenders</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Sunglasses</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Jewelry</a><br />
+                            <a href="" class="listofsubtitle">Watches</a><br />
+                          </div>
+
+                          <!-- Column for Footwear -->
+                          <div class="col-md-3">
+                            <a href="" class="subtitle">Footwear</a>
+                            <hr />
+                            <br />
+                            <a href="" class="listofsubtitle">Flats & Loafers</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Heels & Pumps</a
+                            ><br />
+                            <a href="" class="listofsubtitle"
+                              >Sneakers & Athletic</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Dress Shoes</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Casual Shoes</a
+                            ><br />
+                            <a href="" class="listofsubtitle">Boots & Chukkas</a
+                            ><br />
+                            <a href="" class="listofsubtitle"
+                              >Sandals & Slides</a
+                            ><br />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-3">
+                  <!-- Dropdown link for "Categories" -->
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="collections.html"
+                    id="categoriesDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Categories
+                  </a>
+
+                  <!-- Badge indicating "Hot" next to the dropdown -->
+                  <span
+                    class="menu-item-badge position-absolute top-0 text-light translate-middle bg-primary"
+                    >Hot</span
+                  >
+
+                  <!-- Dropdown menu for "Categories" with multiple product categories -->
+                  <ul
+                    class="dropdown-menu mega-menu"
+                    aria-labelledby="categoriesDropdown"
+                  >
+                    <li>
+                      <div class="container-fluid">
+                        <div class="row">
+                          <!-- Column for Featured Product -->
+                          <div class="col-md-3">
+                            <a class="subtitle">Featured Product</a>
+                            <img
+                              src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_12_large.png?v=1692615909"
+                              class="img-fluid"
+                              alt="New Arrivals"
+                            />
+                          </div>
+
+                          <!-- Column for New Arrivals -->
+                          <div class="col-md-3">
+                            <a class="subtitle">New Arrivals</a>
+                            <img
+                              src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_1_large.png?v=1692616267"
+                              class="img-fluid"
+                              alt="New Arrivals"
+                            />
+                          </div>
+
+                          <!-- Column for Summer Styles -->
+                          <div class="col-md-3">
+                            <a class="subtitle">Summer Styles</a>
+                            <img
+                              src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_15_large.png?v=1692617739"
+                              class="img-fluid"
+                              alt="Summer Styles"
+                            />
+                          </div>
+
+                          <!-- Column for Winter Fashion -->
+                          <div class="col-md-3">
+                            <a class="subtitle">Winter Fashion</a>
+                            <img
+                              src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_19_large.png?v=1692619758"
+                              class="img-fluid"
+                              alt="Winter Fashion"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Row for additional categories -->
+                        <div class="row mt-3">
+                          <!-- Column for Accessories -->
+                          <div class="col-md-3">
+                            <a class="subtitle">Accessories</a>
+                            <img
+                              src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_8_large.png?v=1692607569"
+                              class="img-fluid"
+                              alt="Accessories"
+                            />
+                          </div>
+
+                          <!-- Column for Footwear -->
+                          <div class="col-md-3">
+                            <a class="subtitle">Footwear</a>
+                            <img
+                              src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_20_large.png?v=1692620463"
+                              class="img-fluid"
+                              alt="Footwear"
+                            />
+                          </div>
+
+                          <!-- Column for Men -->
+                          <div class="col-md-3">
+                            <a class="subtitle">Men</a>
+                            <img
+                              src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_4_large.png?v=1692607334"
+                              class="img-fluid"
+                              alt="Men"
+                            />
+                          </div>
+
+                          <!-- Column for Women -->
+                          <div class="col-md-3">
+                            <a class="subtitle">Women</a>
+                            <img
+                              src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_10_large.png?v=1692607375"
+                              class="img-fluid"
+                              alt="Women"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-3">
+                  <!-- Dropdown link for "Product" -->
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="product-page.html"
+                    id="categoriesDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Product
+                  </a>
+
+                  <!-- Dropdown menu for "Product" with various product-related options -->
+                  <ul class="dropdown-menu mega-menu-custom-for-xsmall">
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="#"
+                        >variant images</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="#"
+                        >unit price</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="#"
+                        >pre-order product</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="#"
+                        >countdown</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="#"
+                        >complementary</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="#">video</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="#"
+                        >ar/3D model</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="#"
+                        >gift card</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-3">
+                  <!-- Dropdown link for "Blog" -->
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="blog-details.html"
+                    id="categoriesDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+
+                  <!-- Dropdown menu for "Blog" with different blog layout options -->
+                  <ul class="dropdown-menu mega-menu-custom-for-xsmall">
+                    <li>
+                      <a
+                        class="dropdown-item listofsubtitle"
+                        href="blog-details.html"
+                        >Blog (Default)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item listofsubtitle"
+                        href="blog-details.html"
+                        >Blog (Service)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown px-3">
+                  <!-- Dropdown link for "Pages" -->
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="product-page.html"
+                    id="categoriesDropdown"
+                    role="button"
+                    aria-expanded="false"
+                  >
+                    Pages
+                  </a>
+
+                  <!-- Dropdown menu for "Pages" -->
+                  <ul class="dropdown-menu mega-menu-custom-for-xsmall">
+                    <li>
+                      <a
+                        class="dropdown-item listofsubtitle"
+                        href="about-us.html"
+                        >Contact</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item listofsubtitle"
+                        href="about-us.html"
+                        >About us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item listofsubtitle"
+                        href="about-us.html"
+                        >Service</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item listofsubtitle"
+                        href="frequently-asked-questions.html"
+                        >FAQ</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item listofsubtitle" href="index.html"
+                        >Size Chart</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item listofsubtitle"
+                        href="product-page.html"
+                        >Purchase Now</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!---------------------------------------- end of navbar ---------------------------------->
+    <section class="first-sec-main p-3">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Product</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto">
+            <span
+              ><a href="..." class="home-text text-decoration-none"> Home </a> /
+            </span>
+          </div>
+          <div class="col-auto m-0 p-0">
+            <p class="about-us-text">Product Details</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div
+            id="productImageCarousel"
+            class="carousel slide product-image-carousel"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Assets/img/grid1.png" alt="Product Image 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/img/grid2.png" alt="Product Image 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/img/grid4.png" alt="Product Image 3" />
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/img/grid_9.png" alt="Product Image 3" />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#productImageCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#productImageCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
             </a>
           </div>
-
         </div>
-
-
-
-
-        <div class="d-none d-xl-block order-xl-2">
-
-          <div class="collapse navbar-collapse" id="navMenu">
-
-            <ul class="navbar-nav mx-auto text-center">
-              <li class="nav-item dropdown">
-                <!-- Regular link for "Home" -->
-                <a class="nav-link dropdown-toggle" href="index.html" id="categoriesDropdown" role="button"
-                  aria-expanded="false">
-                  Home
-                </a>
-
-                <!-- Dropdown menu for "Home" with custom styling -->
-                <ul class="dropdown-menu mega-menu-custom-for-small" aria-labelledby="categoriesDropdown">
-                  <li>
-                    <div class="container-fluid">
-                      <div class="row">
-                        <!-- First column for Niche Demos -->
-                        <div class="col-md-6">
-                          <a href="" class="subtitle">Niche Demos</a>
-                          <hr>
-                          <br>
-                          <a href="" class="listofsubtitle">Fashion 1</a>
-                          <br>
-                          <a href="" class="listofsubtitle">Fashion 2</a>
-                          <br>
-                          <a href="" class="listofsubtitle">Fashion 3</a>
-                          <br>
-                          <a href="" class="listofsubtitle">Beauty & cosmetics</a>
-                          <br>
-                          <a href="" class="listofsubtitle">Jewelry</a>
-                          <br>
-                          <a href="" class="listofsubtitle">T-shirts</a>
-                          <br>
-                          <a href="" class="listofsubtitle">Electronics</a>
-                          <br>
-                          <a href="" class="listofsubtitle">Single Product</a>
-                          <br>
-                        </div>
-
-                        <!-- Second column for Global Demos -->
-                        <div class="col-md-6">
-                          <a href="" class="subtitle">Global Demos</a>
-                          <hr>
-                          <br>
-                          <a href="" class="listofsubtitle">Animations</a>
-                          <br>
-                          <a href="" class="listofsubtitle">Dark</a>
-                          <br>
-                          <a href="" class="listofsubtitle">RTL</a>
-                          <br>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-
-
-              <li class="nav-item dropdown px-3">
-                <!-- Dropdown link for "Shop" -->
-                <a class="nav-link dropdown-toggle" href="Product-Page.html" id="shopDropdown" role="button"
-                  aria-expanded="false">
-                  Shop
-                </a>
-
-                <!-- Badge indicating "New" next to the dropdown -->
-                <span class="menu-item-badge position-absolute top-0 text-light translate-middle">New</span>
-
-                <!-- Dropdown menu for "Shop" with multiple categories -->
-                <ul class="dropdown-menu mega-menu" aria-labelledby="shopDropdown">
-                  <li>
-                    <div class="container-fluid">
-                      <div class="row">
-                        <!-- Column for Women's Fashion -->
-                        <div class="col-md-3">
-                          <a href="" class="subtitle">Women's Fashion</a>
-                          <hr>
-                          <br>
-                          <a href="" class="listofsubtitle">Dresses</a><br>
-                          <a href="" class="listofsubtitle">Tops & Blouses</a><br>
-                          <a href="" class="listofsubtitle">Sweaters & Cardigans</a><br>
-                          <a href="" class="listofsubtitle">Jackets & Coats</a><br>
-                          <a href="" class="listofsubtitle">Pants & Jeans</a><br>
-                          <a href="" class="listofsubtitle">Skirts</a><br>
-                          <a href="" class="listofsubtitle">Activewear</a><br>
-                          <a href="" class="listofsubtitle">Lingerie & Sleepwear</a><br>
-                        </div>
-
-                        <!-- Column for Men's Fashion -->
-                        <div class="col-md-3">
-                          <a href="" class="subtitle">Men's Fashion</a>
-                          <hr>
-                          <br>
-                          <a href="" class="listofsubtitle">Shirts</a><br>
-                          <a href="" class="listofsubtitle">T-shirts & Polos</a><br>
-                          <a href="" class="listofsubtitle">Sweaters & Hoodies</a><br>
-                          <a href="" class="listofsubtitle">Jackets & Blazers</a><br>
-                          <a href="" class="listofsubtitle">Pants & Chinos</a><br>
-                          <a href="" class="listofsubtitle">Jeans</a><br>
-                          <a href="" class="listofsubtitle">Suits & Formalwear</a><br>
-                          <a href="" class="listofsubtitle">Activewear</a><br>
-                        </div>
-
-                        <!-- Column for Accessories -->
-                        <div class="col-md-3">
-                          <a href="" class="subtitle">Accessories</a>
-                          <hr>
-                          <br>
-                          <a href="" class="listofsubtitle">Bags & Purses</a><br>
-                          <a href="" class="listofsubtitle">Hats & Caps</a><br>
-                          <a href="" class="listofsubtitle">Scarves & Shawls</a><br>
-                          <a href="" class="listofsubtitle">Belts & Suspenders</a><br>
-                          <a href="" class="listofsubtitle">Sunglasses</a><br>
-                          <a href="" class="listofsubtitle">Jewelry</a><br>
-                          <a href="" class="listofsubtitle">Watches</a><br>
-                        </div>
-
-                        <!-- Column for Footwear -->
-                        <div class="col-md-3">
-                          <a href="" class="subtitle">Footwear</a>
-                          <hr>
-                          <br>
-                          <a href="" class="listofsubtitle">Flats & Loafers</a><br>
-                          <a href="" class="listofsubtitle">Heels & Pumps</a><br>
-                          <a href="" class="listofsubtitle">Sneakers & Athletic</a><br>
-                          <a href="" class="listofsubtitle">Dress Shoes</a><br>
-                          <a href="" class="listofsubtitle">Casual Shoes</a><br>
-                          <a href="" class="listofsubtitle">Boots & Chukkas</a><br>
-                          <a href="" class="listofsubtitle">Sandals & Slides</a><br>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-
-
-              <li class="nav-item dropdown px-3">
-                <!-- Dropdown link for "Categories" -->
-                <a class="nav-link dropdown-toggle" href="collections.html" id="categoriesDropdown" role="button"
-                  aria-expanded="false">
-                  Categories
-                </a>
-
-                <!-- Badge indicating "Hot" next to the dropdown -->
-                <span class="menu-item-badge position-absolute top-0 text-light translate-middle bg-primary">Hot</span>
-
-                <!-- Dropdown menu for "Categories" with multiple product categories -->
-                <ul class="dropdown-menu mega-menu" aria-labelledby="categoriesDropdown">
-                  <li>
-                    <div class="container-fluid">
-                      <div class="row">
-                        <!-- Column for Featured Product -->
-                        <div class="col-md-3">
-                          <a class="subtitle">Featured Product</a>
-                          <img
-                            src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_12_large.png?v=1692615909"
-                            class="img-fluid" alt="New Arrivals">
-                        </div>
-
-                        <!-- Column for New Arrivals -->
-                        <div class="col-md-3">
-                          <a class="subtitle">New Arrivals</a>
-                          <img
-                            src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_1_large.png?v=1692616267"
-                            class="img-fluid" alt="New Arrivals">
-                        </div>
-
-                        <!-- Column for Summer Styles -->
-                        <div class="col-md-3">
-                          <a class="subtitle">Summer Styles</a>
-                          <img
-                            src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_15_large.png?v=1692617739"
-                            class="img-fluid" alt="Summer Styles">
-                        </div>
-
-                        <!-- Column for Winter Fashion -->
-                        <div class="col-md-3">
-                          <a class="subtitle">Winter Fashion</a>
-                          <img
-                            src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_19_large.png?v=1692619758"
-                            class="img-fluid" alt="Winter Fashion">
-                        </div>
-                      </div>
-
-                      <!-- Row for additional categories -->
-                      <div class="row mt-3">
-                        <!-- Column for Accessories -->
-                        <div class="col-md-3">
-                          <a class="subtitle">Accessories</a>
-                          <img
-                            src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_8_large.png?v=1692607569"
-                            class="img-fluid" alt="Accessories">
-                        </div>
-
-                        <!-- Column for Footwear -->
-                        <div class="col-md-3">
-                          <a class="subtitle">Footwear</a>
-                          <img
-                            src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_20_large.png?v=1692620463"
-                            class="img-fluid" alt="Footwear">
-                        </div>
-
-                        <!-- Column for Men -->
-                        <div class="col-md-3">
-                          <a class="subtitle">Men</a>
-                          <img
-                            src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_4_large.png?v=1692607334"
-                            class="img-fluid" alt="Men">
-                        </div>
-
-                        <!-- Column for Women -->
-                        <div class="col-md-3">
-                          <a class="subtitle">Women</a>
-                          <img
-                            src="https://minimalin-demo.myshopify.com/cdn/shop/collections/collection-banner_10_large.png?v=1692607375"
-                            class="img-fluid" alt="Women">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-
-
-              <li class="nav-item dropdown px-3">
-                <!-- Dropdown link for "Product" -->
-                <a class="nav-link dropdown-toggle" href="Product-Page.html" id="categoriesDropdown" role="button"
-                  aria-expanded="false">
-                  Product
-                </a>
-
-
-                <!-- Dropdown menu for "Product" with various product-related options -->
-                <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                  <li><a class="dropdown-item listofsubtitle" href="#">variant images</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="#">unit price</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="#">pre-order product</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="#">countdown</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="#">complementary</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="#">video</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="#">ar/3D model</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="#">gift card</a></li>
-                </ul>
-              </li>
-
-
-
-              <li class="nav-item dropdown px-3">
-                <!-- Dropdown link for "Blog" -->
-                <a class="nav-link dropdown-toggle" href="Blog-Details.html" id="categoriesDropdown" role="button"
-                  aria-expanded="false">
-                  Blog
-                </a>
-
-
-                <!-- Dropdown menu for "Blog" with different blog layout options -->
-                <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                  <li><a class="dropdown-item listofsubtitle" href="Blog-Details.html">Blog (Default)</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="Blog-Details.html">Blog (Service)</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown px-3">
-                <!-- Dropdown link for "Pages" -->
-                <a class="nav-link dropdown-toggle" href="Product-Page.html" id="categoriesDropdown" role="button"
-                  aria-expanded="false">
-                  Pages
-                </a>
-
-
-                <!-- Dropdown menu for "Pages" -->
-                <ul class="dropdown-menu mega-menu-custom-for-xsmall">
-                  <li><a class="dropdown-item listofsubtitle" href="About-us.html">Contact</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="About-us.html">About us</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="About-us.html">Service</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="frequently-asked-questions.html">FAQ</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="index.html">Size Chart</a></li>
-                  <li><a class="dropdown-item listofsubtitle" href="Product-Page.html">Purchase Now</a></li>
-                </ul>
-              </li>
-
-            </ul>
-
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-<!---------------------------------------- end of navbar ---------------------------------->
-  <section class="first-sec-main p-3">
-    <div class="container d-flex flex-column justify-content-center align-items-center">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>Product</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-auto">
-          <span><a href="..." class="home-text text-decoration-none"> Home </a> /
-          </span>
-        </div>
-        <div class="col-auto m-0 p-0">
-          <p class="about-us-text">Product Details</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <main class="container mt-5">
-    <div class="row">
-      <div class="col-md-6">
-        <div id="productImageCarousel" class="carousel slide product-image-carousel" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Assets/img/grid1.png" alt="Product Image 1" />
-            </div>
-            <div class="carousel-item">
-              <img src="Assets/img/grid2.png" alt="Product Image 2" />
-            </div>
-            <div class="carousel-item">
-              <img src="Assets/img/grid4.png" alt="Product Image 3" />
-            </div>
-            <div class="carousel-item">
-              <img src="Assets/img/grid_9.png" alt="Product Image 3" />
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#productImageCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#productImageCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <h2 class="fs-3">B. Pair of Blue Shoes</h2>
-        <p class="price">
-          <span class="fs-4 fw-bold">$70.00</span> <del>$90.00</del>
-          <span class="badge bg-secondary-subtle text-secondary">Save -25%</span>
-        </p>
-        <hr />
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-          quae ab illo inventore veritatis et quasi architecto beatae vitae
-          dicta sunt explicabo.
-        </p>
-        <hr />
-
-        <p>
-          <i class="far fa-eye"></i> 14 people are viewing this right now.
-        </p>
-        <hr />
-
-        <p><strong>Availability:</strong> 17 left in stock</p>
-        <p><strong>SKU:</strong> 1110</p>
-        <p><strong>Vendor:</strong> Vendor B</p>
-        <p><strong>Type:</strong> Type B</p>
-        <hr />
-
-        <div class="form-group size-color-options">
-          <div class="d-flex align-items-center">
-            <label for="size" class="me-5">Size:</label>
-            <button class="btn btn-outline-secondary">X</button>
-            <button class="btn btn-outline-secondary">XL</button>
-            <button class="btn btn-outline-secondary">M</button>
-            <button class="btn btn-outline-secondary">S</button>
-          </div>
-          <div class="d-flex align-items-center">
-            <label for="color" class="me-4 pe-2">Color:</label><br />
-            <button class="btn rounded-1 p-3 btn-warning"></button>
-            <button class="btn rounded-1 p-3 btn-secondary"></button>
-            <button class="btn rounded-1 p-3 btn-danger"></button>
-            <button class="btn rounded-1 p-3 btn-dark"></button>
-            <button class="btn rounded-1 p-3 btn-primary"></button>
-          </div>
-        </div>
-
-        <div class="d-flex gap-1">
-          <div class="input-group d-flex justify-content-center align-items-center mb-3 quantity-input">
-            <div class="input-group-prepend">
-              <button class="btn btn-outline-secondary" type="button" id="minusButton">
-                -
-              </button>
-            </div>
-            <input type="number" class="form-control" value="1" />
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="plusButton">
-                +
-              </button>
-            </div>
-          </div>
-
-          <a href="checkout.html" class="btn btn-primary btn-lg add-to-cart">
-            Add to cart
-          </a>
-          <a href="checkout.html" class="btn btn-secondary btn-lg buy-now">Buy it now</a>
-        </div>
-        <div class="product-options d-flex gap-3 mt-3">
-          <a href="#" class="add-to-wishlist fs-7 text-black"><i class="far fa-heart text-black"></i> Add to
-            wishlist</a>
-
-          <a href="#" class="compare fs-7 text-black"><i class="fas fa-exchange-alt fs-7 text-black"></i> Compare</a>
-
-          <a href="frequently-asked-questions.html" class="ask-question fs-7 text-black"><i
-              class="far fa-question-circle fs-7 text-black"></i> Ask a
-            Question</a>
-
-          <a href="#" class="size-chart fs-7 text-black"><i class="fas fa-ruler-combined fs-7 text-black"></i> Size
-            Chart</a>
-        </div>
-        <hr />
-
-        <div class="delivery-info mt-3">
-          <p>
-            <i class="fas fa-truck text-black fs-7"></i> Estimated Delivery
-            Date: 09-12 August, 2024.
+        <div class="col-md-6">
+          <h2 class="fs-3">B. Pair of Blue Shoes</h2>
+          <p class="price">
+            <span class="fs-4 fw-bold">$70.00</span> <del>$90.00</del>
+            <span class="badge bg-secondary-subtle text-secondary"
+              >Save -25%</span
+            >
           </p>
-        </div>
+          <hr />
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+          <hr />
 
-        <div class="return-policy mt-3">
-          <h4>Return rules summary</h4>
-          <ul>
-            <li>Returns accepted for 30 days</li>
-            <li>Free return shipping</li>
-            <li>No restocking fee</li>
-            <li>No final sale items</li>
-          </ul>
-        </div>
-        <hr />
+          <p>
+            <i class="far fa-eye"></i> 14 people are viewing this right now.
+          </p>
+          <hr />
 
-        <div class="checkout mt-3">
-          <p class="fw-medium px-3 fs-6">Guaranteed safe checkout</p>
-          <div class="d-flex px-3">
-            <a href="checkout.html"><img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
-                class="pe-2" /></a>
-            <a href="checkout.html"><img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
-                class="pe-2" alt="" /></a>
-            <a href="checkout.html"><img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/bitcoin-e41278677541fc32b8d2e7fa41e61aaab2935151a6048a1d8d341162f5b93a0a.svg"
-                class="pe-2" alt="" /></a>
-            <a href="checkout.html"><img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
-                class="pe-2" alt="" /></a>
-            <a href="checkout.html"><img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
-                class="pe-2" alt="" /></a>
-            <a href="checkout.html"><img
-                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
-                class="pe-2" alt="" /></a>
+          <p><strong>Availability:</strong> 17 left in stock</p>
+          <p><strong>SKU:</strong> 1110</p>
+          <p><strong>Vendor:</strong> Vendor B</p>
+          <p><strong>Type:</strong> Type B</p>
+          <hr />
+
+          <div class="form-group size-color-options">
+            <div class="d-flex align-items-center">
+              <label for="size" class="me-5">Size:</label>
+              <button class="btn btn-outline-secondary">X</button>
+              <button class="btn btn-outline-secondary">XL</button>
+              <button class="btn btn-outline-secondary">M</button>
+              <button class="btn btn-outline-secondary">S</button>
+            </div>
+            <div class="d-flex align-items-center">
+              <label for="color" class="me-4 pe-2">Color:</label><br />
+              <button class="btn rounded-1 p-3 btn-warning"></button>
+              <button class="btn rounded-1 p-3 btn-secondary"></button>
+              <button class="btn rounded-1 p-3 btn-danger"></button>
+              <button class="btn rounded-1 p-3 btn-dark"></button>
+              <button class="btn rounded-1 p-3 btn-primary"></button>
+            </div>
+          </div>
+
+          <div class="d-flex gap-1">
+            <div
+              class="input-group d-flex justify-content-center align-items-center mb-3 quantity-input"
+            >
+              <div class="input-group-prepend">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="minusButton"
+                >
+                  -
+                </button>
+              </div>
+              <input type="number" class="form-control" value="1" />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="plusButton"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            <a href="checkout.html" class="btn btn-primary btn-lg add-to-cart">
+              Add to cart
+            </a>
+            <a href="checkout.html" class="btn btn-secondary btn-lg buy-now"
+              >Buy it now</a
+            >
+          </div>
+          <div class="product-options d-flex gap-3 mt-3">
+            <a href="#" class="add-to-wishlist fs-7 text-black"
+              ><i class="far fa-heart text-black"></i> Add to wishlist</a
+            >
+
+            <a href="#" class="compare fs-7 text-black"
+              ><i class="fas fa-exchange-alt fs-7 text-black"></i> Compare</a
+            >
+
+            <a
+              href="frequently-asked-questions.html"
+              class="ask-question fs-7 text-black"
+              ><i class="far fa-question-circle fs-7 text-black"></i> Ask a
+              Question</a
+            >
+
+            <a href="#" class="size-chart fs-7 text-black"
+              ><i class="fas fa-ruler-combined fs-7 text-black"></i> Size
+              Chart</a
+            >
           </div>
           <hr />
-        </div>
 
-        <div class="pairs-well-with mt-5">
-          <h3>Pairs well with</h3>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card">
-                <img src="Assets/img/grid1.png" class="card-img-top" alt="Paired Item 1" />
-                <div class="card-body">
-                  <h6 class="card-title">E. Casual Comf..</h6>
-                  <p class="card-text"><del>$72.99</del> $47.00</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img src="Assets/img/grid2.png" class="card-img-top" alt="Paired Item 2" />
-                <div class="card-body">
-                  <h6 class="card-title">E. Casual Comf..</h6>
-                  <p class="card-text">$47.00</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img src="Assets/img/grid4.png" class="card-img-top" alt="Paired Item 3" />
-                <div class="card-body">
-                  <h6 class="card-title">E. Casual Comf..</h6>
-                  <p class="card-text"><del>$72.00</del> $47.00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="social-sharing mt-5 d-flex gap-4 align-items-center">
-          <h3>Share:</h3>
-          <a href="#" class="facebook text-black"><i class="fab fa-facebook-f"></i> Facebook</a>
-
-          <a href="#" class="twitter text-black"><i class="fab fa-twitter"></i> Twitter</a>
-
-          <a href="#" class="pinterest text-black"><i class="fab fa-pinterest"></i> Pinterest</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-5 Texts">
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active border-0 border-bottom" data-toggle="tab" href="#description"
-            role="tab">Description</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link border-0" data-toggle="tab" href="#video" role="tab">Video</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link border-0" data-toggle="tab" href="#productType" role="tab">Product Type</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link border-0" data-toggle="tab" href="#delivery" role="tab">Delivery System</a>
-        </li>
-      </ul>
-      <div class="tab-content border-0">
-        <div class="tab-pane fade show active border-0" id="description" role="tabpanel">
-          <p>
-            As opposed to using 'Content here, content here', making it look
-            like readable English. Many desktop publishing packages and web
-            page editors now use Lorem Ipsum as their default model text, and
-            a search for 'lorem ipsum' will uncover many web sites still in
-            their infancy. Various versions have evolved over the years,
-            sometimes by accident, sometimes on purpose injected humour and
-            the like. It is a long established fact that a reader will be
-            distracted by the readable content of a page when looking at its
-            layout. The point of using Lorem Ipsum is that it has a
-            more-or-less normal distribution of letters.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            nobis provident eius. Tenetur facilis, illo nesciunt numquam non,
-            odit iure, quia recusandae deleniti nihil excepturi?
-          </p>
-        </div>
-        <div class="tab-pane fade" id="video" role="tabpanel">
-          <p>video content</p>
-        </div>
-        <div class="tab-pane fade" id="productType" role="tabpanel">
-          <p>product type content</p>
-        </div>
-        <div class="tab-pane fade" id="delivery" role="tabpanel">
-          <p>delivery system content</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="collection row py-5 mx-0 w-100 text-center">
-      <h2 class="mb-4">Related Products</h2>
-      <div class="product col-lg-3 col-md-6 col-sm-12">
-        <div class="img-div h-auto">
-          <img class="img-h1" src="Assets/img/grid1.png" alt="" />
-          <div class="d-flex flex-column align-items-center mt-2">
-            <p class="fw-semibold men">W. Men Formal T-Shirt</p>
-            <p class="para">
-              <del class="del">Rs. 1800,00</del> Rs. 1,700.00
+          <div class="delivery-info mt-3">
+            <p>
+              <i class="fas fa-truck text-black fs-7"></i> Estimated Delivery
+              Date: 09-12 August, 2024.
             </p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: red"></span>
-              <span class="color-swatch" style="background-color: green"></span>
-              <span class="color-swatch" style="background-color: blue"></span>
-              <span class="color-swatch" style="background-color: black"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product col-lg-3 col-md-6 col-sm-12">
-        <div class="img-div h-auto">
-          <img class="img-h1" src="Assets/img/grid_5.png" />
-          <div class="d-flex flex-column align-items-center mt-2">
-            <p class="fw-semibold shoe">B. Pair of Blue Shoes</p>
-            <p>Rs. 6,800.00</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: red"></span>
-              <span class="color-swatch" style="background-color: green"></span>
-              <span class="color-swatch" style="background-color: blue"></span>
-              <span class="color-swatch" style="background-color: black"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product col-lg-3 col-md-6 col-sm-12">
-        <div class="img-div h-auto">
-          <img class="img-h1" src="Assets/img/grid_7.png" />
-          <div class="d-flex flex-column align-items-center mt-2">
-            <p class="fw-semibold watch">F.Ultimate Smart Watch</p>
-            <p class="para-1">
-              <del class="del-1"> Rs. 6400.00 </del> Rs. 4,700.00
-            </p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: red"></span>
-              <span class="color-swatch" style="background-color: green"></span>
-              <span class="color-swatch" style="background-color: blue"></span>
-              <span class="color-swatch" style="background-color: black"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product col-lg-3 col-md-6 col-sm-12">
-        <div class="img-div h-auto">
-          <img class="img-h1" src="Assets/img/jacket 1.png" alt="" />
-          <div class="d-flex flex-column align-items-center mt-2">
-            <p class="fw-semibold jacket">S. Mokmal Jacket</p>
-            <p>Rs. 2,800.00</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: red"></span>
-              <span class="color-swatch" style="background-color: green"></span>
-              <span class="color-swatch" style="background-color: blue"></span>
-              <span class="color-swatch" style="background-color: black"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="collection row py-5 pt-3 mx-0 w-100 text-center">
-      <h2 class="mb-4">Recently Viewed</h2>
-      <div class="product col-lg-3 col-md-6 col-sm-12">
-        <div class="img-div h-auto">
-          <img class="img-h1" src="Assets/img/babay-tops.webp" alt="" />
-          <div class="d-flex flex-column align-items-center mt-2">
-            <p class="fw-semibold men">W. Men Formal T-Shirt</p>
-            <p class="para">
-              <del class="del">Rs. 1800,00</del> Rs. 1,700.00
-            </p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: red"></span>
-              <span class="color-swatch" style="background-color: green"></span>
-              <span class="color-swatch" style="background-color: blue"></span>
-              <span class="color-swatch" style="background-color: black"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product col-lg-3 col-md-6 col-sm-12">
-        <div class="img-div h-auto">
-          <img class="img-h1" src="Assets/img/BabySlipper.webp" />
-          <div class="d-flex flex-column align-items-center mt-2">
-            <p class="fw-semibold shoe">B. Pair of Blue Shoes</p>
-            <p>Rs. 6,800.00</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: red"></span>
-              <span class="color-swatch" style="background-color: green"></span>
-              <span class="color-swatch" style="background-color: blue"></span>
-              <span class="color-swatch" style="background-color: black"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product col-lg-3 col-md-6 col-sm-12">
-        <div class="img-div h-auto">
-          <img class="img-h1" src="Assets/img/baby-hat.webp" />
-          <div class="d-flex flex-column align-items-center mt-2">
-            <p class="fw-semibold watch">F.Ultimate Smart Watch</p>
-            <p class="para-1">
-              <del class="del-1"> Rs. 6400.00 </del> Rs. 4,700.00
-            </p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: red"></span>
-              <span class="color-swatch" style="background-color: green"></span>
-              <span class="color-swatch" style="background-color: blue"></span>
-              <span class="color-swatch" style="background-color: black"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product col-lg-3 col-md-6 col-sm-12">
-        <div class="img-div h-auto">
-          <img class="img-h1" src="Assets/img/skin-care.webp" alt="" />
-          <div class="d-flex flex-column align-items-center mt-2">
-            <p class="fw-semibold jacket">S. Mokmal Jacket</p>
-            <p>Rs. 2,800.00</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: red"></span>
-              <span class="color-swatch" style="background-color: green"></span>
-              <span class="color-swatch" style="background-color: blue"></span>
-              <span class="color-swatch" style="background-color: black"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="faq mt-5">
-      <section>
-        <div>
-          <div class="page-title text-center fs-3 fw-normal mt-5 mb-3">
-            <p>FAQs</p>
           </div>
 
-          <div class="accordion px-5 pb-5" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  How to buy a product ?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the
-                  showing and hiding via CSS transitions. You can modify any
-                  of this with custom CSS or overriding our default variables.
-                  It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the
-                  transition does limit overflow.
+          <div class="return-policy mt-3">
+            <h4>Return rules summary</h4>
+            <ul>
+              <li>Returns accepted for 30 days</li>
+              <li>Free return shipping</li>
+              <li>No restocking fee</li>
+              <li>No final sale items</li>
+            </ul>
+          </div>
+          <hr />
+
+          <div class="checkout mt-3">
+            <p class="fw-medium px-3 fs-6">Guaranteed safe checkout</p>
+            <div class="d-flex px-3">
+              <a href="checkout.html"
+                ><img
+                  src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+                  class="pe-2"
+              /></a>
+              <a href="checkout.html"
+                ><img
+                  src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+                  class="pe-2"
+                  alt=""
+              /></a>
+              <a href="checkout.html"
+                ><img
+                  src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/bitcoin-e41278677541fc32b8d2e7fa41e61aaab2935151a6048a1d8d341162f5b93a0a.svg"
+                  class="pe-2"
+                  alt=""
+              /></a>
+              <a href="checkout.html"
+                ><img
+                  src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+                  class="pe-2"
+                  alt=""
+              /></a>
+              <a href="checkout.html"
+                ><img
+                  src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+                  class="pe-2"
+                  alt=""
+              /></a>
+              <a href="checkout.html"
+                ><img
+                  src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                  class="pe-2"
+                  alt=""
+              /></a>
+            </div>
+            <hr />
+          </div>
+
+          <div class="pairs-well-with mt-5">
+            <h3>Pairs well with</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="Assets/img/grid1.png"
+                    class="card-img-top"
+                    alt="Paired Item 1"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">E. Casual Comf..</h6>
+                    <p class="card-text"><del>$72.99</del> $47.00</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How can I make refund from your website ?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong>
-                  It is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the
-                  showing and hiding via CSS transitions. You can modify any
-                  of this with custom CSS or overriding our default variables.
-                  It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the
-                  transition does limit overflow.
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="Assets/img/grid2.png"
+                    class="card-img-top"
+                    alt="Paired Item 2"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">E. Casual Comf..</h6>
+                    <p class="card-text">$47.00</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  I am a new answer .Have should I start?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the
-                  showing and hiding via CSS transitions. You can modify any
-                  of this with custom CSS or overriding our default variables.
-                  It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the
-                  transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  I am a new answer .Have should I start?
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the
-                  showing and hiding via CSS transitions. You can modify any
-                  of this with custom CSS or overriding our default variables.
-                  It's also worth noting that just about any HTML can go
-                  within the <code>.accordion-body</code>, though the
-                  transition does limit overflow.
+              <div class="col-md-4">
+                <div class="card">
+                  <img
+                    src="Assets/img/grid4.png"
+                    class="card-img-top"
+                    alt="Paired Item 3"
+                  />
+                  <div class="card-body">
+                    <h6 class="card-title">E. Casual Comf..</h6>
+                    <p class="card-text"><del>$72.00</del> $47.00</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="social-sharing mt-5 d-flex gap-4 align-items-center">
+            <h3>Share:</h3>
+            <a href="#" class="facebook text-black"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+
+            <a href="#" class="twitter text-black"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            >
+
+            <a href="#" class="pinterest text-black"
+              ><i class="fab fa-pinterest"></i> Pinterest</a
+            >
+          </div>
         </div>
+      </div>
+
+      <div class="mt-5 Texts">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active border-0 border-bottom"
+              data-toggle="tab"
+              href="#description"
+              role="tab"
+              >Description</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link border-0"
+              data-toggle="tab"
+              href="#video"
+              role="tab"
+              >Video</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link border-0"
+              data-toggle="tab"
+              href="#productType"
+              role="tab"
+              >Product Type</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link border-0"
+              data-toggle="tab"
+              href="#delivery"
+              role="tab"
+              >Delivery System</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content border-0">
+          <div
+            class="tab-pane fade show active border-0"
+            id="description"
+            role="tabpanel"
+          >
+            <p>
+              As opposed to using 'Content here, content here', making it look
+              like readable English. Many desktop publishing packages and web
+              page editors now use Lorem Ipsum as their default model text, and
+              a search for 'lorem ipsum' will uncover many web sites still in
+              their infancy. Various versions have evolved over the years,
+              sometimes by accident, sometimes on purpose injected humour and
+              the like. It is a long established fact that a reader will be
+              distracted by the readable content of a page when looking at its
+              layout. The point of using Lorem Ipsum is that it has a
+              more-or-less normal distribution of letters.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              nobis provident eius. Tenetur facilis, illo nesciunt numquam non,
+              odit iure, quia recusandae deleniti nihil excepturi?
+            </p>
+          </div>
+          <div class="tab-pane fade" id="video" role="tabpanel">
+            <p>video content</p>
+          </div>
+          <div class="tab-pane fade" id="productType" role="tabpanel">
+            <p>product type content</p>
+          </div>
+          <div class="tab-pane fade" id="delivery" role="tabpanel">
+            <p>delivery system content</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="collection row py-5 mx-0 w-100 text-center">
+        <h2 class="mb-4">Related Products</h2>
+        <div class="product col-lg-3 col-md-6 col-sm-12">
+          <div class="img-div h-auto">
+            <img class="img-h1" src="Assets/img/grid1.png" alt="" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <p class="fw-semibold men">W. Men Formal T-Shirt</p>
+              <p class="para">
+                <del class="del">Rs. 1800,00</del> Rs. 1,700.00
+              </p>
+              <div class="color-swatches">
+                <span class="color-swatch" style="background-color: red"></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: blue"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product col-lg-3 col-md-6 col-sm-12">
+          <div class="img-div h-auto">
+            <img class="img-h1" src="Assets/img/grid_5.png" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <p class="fw-semibold shoe">B. Pair of Blue Shoes</p>
+              <p>Rs. 6,800.00</p>
+              <div class="color-swatches">
+                <span class="color-swatch" style="background-color: red"></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: blue"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product col-lg-3 col-md-6 col-sm-12">
+          <div class="img-div h-auto">
+            <img class="img-h1" src="Assets/img/grid_7.png" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <p class="fw-semibold watch">F.Ultimate Smart Watch</p>
+              <p class="para-1">
+                <del class="del-1"> Rs. 6400.00 </del> Rs. 4,700.00
+              </p>
+              <div class="color-swatches">
+                <span class="color-swatch" style="background-color: red"></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: blue"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product col-lg-3 col-md-6 col-sm-12">
+          <div class="img-div h-auto">
+            <img class="img-h1" src="Assets/img/jacket 1.png" alt="" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <p class="fw-semibold jacket">S. Mokmal Jacket</p>
+              <p>Rs. 2,800.00</p>
+              <div class="color-swatches">
+                <span class="color-swatch" style="background-color: red"></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: blue"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collection row py-5 pt-3 mx-0 w-100 text-center">
+        <h2 class="mb-4">Recently Viewed</h2>
+        <div class="product col-lg-3 col-md-6 col-sm-12">
+          <div class="img-div h-auto">
+            <img class="img-h1" src="Assets/img/babay-tops.webp" alt="" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <p class="fw-semibold men">W. Men Formal T-Shirt</p>
+              <p class="para">
+                <del class="del">Rs. 1800,00</del> Rs. 1,700.00
+              </p>
+              <div class="color-swatches">
+                <span class="color-swatch" style="background-color: red"></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: blue"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product col-lg-3 col-md-6 col-sm-12">
+          <div class="img-div h-auto">
+            <img class="img-h1" src="Assets/img/BabySlipper.webp" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <p class="fw-semibold shoe">B. Pair of Blue Shoes</p>
+              <p>Rs. 6,800.00</p>
+              <div class="color-swatches">
+                <span class="color-swatch" style="background-color: red"></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: blue"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product col-lg-3 col-md-6 col-sm-12">
+          <div class="img-div h-auto">
+            <img class="img-h1" src="Assets/img/baby-hat.webp" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <p class="fw-semibold watch">F.Ultimate Smart Watch</p>
+              <p class="para-1">
+                <del class="del-1"> Rs. 6400.00 </del> Rs. 4,700.00
+              </p>
+              <div class="color-swatches">
+                <span class="color-swatch" style="background-color: red"></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: blue"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product col-lg-3 col-md-6 col-sm-12">
+          <div class="img-div h-auto">
+            <img class="img-h1" src="Assets/img/skin-care.webp" alt="" />
+            <div class="d-flex flex-column align-items-center mt-2">
+              <p class="fw-semibold jacket">S. Mokmal Jacket</p>
+              <p>Rs. 2,800.00</p>
+              <div class="color-swatches">
+                <span class="color-swatch" style="background-color: red"></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: blue"
+                ></span>
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="faq mt-5">
+        <section>
+          <div>
+            <div class="page-title text-center fs-3 fw-normal mt-5 mb-3">
+              <p>FAQs</p>
+            </div>
+
+            <div class="accordion px-5 pb-5" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    How to buy a product ?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How can I make refund from your website ?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    I am a new answer .Have should I start?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    I am a new answer .Have should I start?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-5">
+          <div>
+            <div
+              class="for-contact text-center d-flex flex-column align-items-center"
+            >
+              <h3 class="fw-semibold">
+                For father more help, contact with our support team.
+              </h3>
+              <a
+                href="about-us.html"
+                class="btn btn-primary rounded-1 py-1 px-3 my-4"
+              >
+                Contact Us
+              </a>
+              <p class="fw-medium fs-5">
+                <span class="fa fa-phone"> </span> +0123-456-789
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
-      <section class="mb-5">
-        <div>
-          <div class="for-contact text-center d-flex flex-column align-items-center">
-            <h3 class="fw-semibold">
-              For father more help, contact with our support team.
-            </h3>
-            <a href="about-us.html" class="btn btn-primary rounded-1 py-1 px-3 my-4">
-              Contact Us
-            </a>
-            <p class="fw-medium fs-5">
-              <span class="fa fa-phone"> </span> +0123-456-789
+    </main>
+    <!-------------------------------start of footer--------------------->
+    <footer class="bg-light pt-5 foot">
+      <div class="container">
+        <div class="row">
+          <!-- About Us Section -->
+          <div class="col-lg-6 col-md-6 textdec mb-4">
+            <a class="mb-2 text-dark titles fw-bold p-4 ps-3 fs-4">About Us.</a>
+            <p class="text-dark py-3 px-3 pb-0 w-75 fs-6">
+              Minimal E-Commerce is a dynamic and innovative online retail
+              platform that offers a wide range of products to customers
+              worldwide.
             </p>
+            <!-- Social Media Links -->
+            <div class="d-flex pt-1 pb-3 px-4">
+              <a href="https://www.facebook.com/">
+                <i class="bi bi-facebook pe-4 text-dark"></i>
+              </a>
+              <a href="https://x.com/">
+                <i class="bi bi-twitter pe-4 text-dark"></i>
+              </a>
+              <a href="https://www.youtube.com/">
+                <i class="bi bi-youtube pe-4 text-dark"></i>
+              </a>
+              <a href="https://www.instagram.com/">
+                <i class="bi bi-instagram pe-4 text-dark"></i>
+              </a>
+              <a href="https://www.tiktok.com/">
+                <i class="bi bi-tiktok pe-4 text-dark"></i>
+              </a>
+            </div>
+            <!-- Guaranteed Safe Checkout Text -->
+            <p class="fw-medium px-3 fs-6">Guaranteed safe checkout</p>
+            <!-- Payment Icons -->
+            <div class="d-flex px-3">
+              <img
+                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+                class="pe-2"
+              />
+              <img
+                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+                class="pe-2"
+                alt=""
+              />
+              <img
+                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/bitcoin-e41278677541fc32b8d2e7fa41e61aaab2935151a6048a1d8d341162f5b93a0a.svg"
+                class="pe-2"
+                alt=""
+              />
+              <img
+                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+                class="pe-2"
+                alt=""
+              />
+              <img
+                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+                class="pe-2"
+                alt=""
+              />
+              <img
+                src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                class="pe-2"
+                alt=""
+              />
+            </div>
           </div>
-        </div>
-      </section>
-    </section>
-  </main>
-  <!-------------------------------start of footer--------------------->
-  <footer class="bg-light pt-5 foot">
-    <div class="container">
-      <div class="row">
-        <!-- About Us Section -->
-        <div class="col-lg-6 col-md-6 textdec mb-4">
-          <a class="mb-2 text-dark titles fw-bold p-4 ps-3 fs-4">About Us.</a>
-          <p class="text-dark py-3 px-3 pb-0 w-75 fs-6">
-            Minimal E-Commerce is a dynamic and innovative online retail platform that offers a wide range of products
-            to customers worldwide.
-          </p>
-          <!-- Social Media Links -->
-          <div class="d-flex pt-1 pb-3 px-4">
-            <a href="https://www.facebook.com/">
-              <i class="bi bi-facebook pe-4 text-dark"></i>
+
+          <!-- Quick Links Section -->
+          <div class="col-lg-2 col-6 mb-4">
+            <p class="text-dark titles fs-5 fw-bold">Quick Link</p>
+            <a href="index.html" class="text-dark d-block mb-3">
+              <p>My Account</p>
             </a>
-            <a href="https://x.com/">
-              <i class="bi bi-twitter pe-4 text-dark"></i>
+            <a href="index.html" class="text-dark d-block mb-3">
+              <p>My Cart</p>
             </a>
-            <a href="https://www.youtube.com/">
-              <i class="bi bi-youtube pe-4 text-dark"></i>
+            <a href="#" class="text-dark d-block mb-3">
+              <p>Wishlist</p>
             </a>
-            <a href="https://www.instagram.com/">
-              <i class="bi bi-instagram pe-4 text-dark"></i>
+            <a href="#" class="text-dark d-block mb-3">
+              <p>Gift Card</p>
             </a>
-            <a href="https://www.tiktok.com/">
-              <i class="bi bi-tiktok pe-4 text-dark"></i>
+            <a
+              href="frequently-asked-questions.html"
+              class="text-dark d-block mb-3"
+            >
+              <p>Need Help?</p>
             </a>
           </div>
-          <!-- Guaranteed Safe Checkout Text -->
-          <p class="fw-medium px-3 fs-6">Guaranteed safe checkout</p>
-          <!-- Payment Icons -->
-          <div class="d-flex px-3">
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
-              class="pe-2" />
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
-              class="pe-2" alt="" />
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/bitcoin-e41278677541fc32b8d2e7fa41e61aaab2935151a6048a1d8d341162f5b93a0a.svg"
-              class="pe-2" alt="" />
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
-              class="pe-2" alt="" />
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
-              class="pe-2" alt="" />
-            <img
-              src="https://minimalin-demo.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
-              class="pe-2" alt="" />
+
+          <!-- Information Section -->
+          <div class="col-lg-2 col-6 mb-4">
+            <p class="text-dark titles fw-bold fs-5">Information</p>
+            <a href="about-us.html" class="text-dark d-block mb-3 textnav">
+              <p>About us</p>
+            </a>
+            <a href="about-us.html" class="text-dark d-block mb-3 textnav">
+              <p>Contact</p>
+            </a>
+            <a href="blog-details.html" class="text-dark d-block mb-3">
+              <p>Blogs</p>
+            </a>
+            <a href="#" class="text-dark d-block mb-3">
+              <p>Size Chart</p>
+            </a>
+            <a
+              href="frequently-asked-questions.html"
+              class="text-dark d-block mb-3"
+            >
+              <p>FAQ</p>
+            </a>
           </div>
-        </div>
 
-        <!-- Quick Links Section -->
-        <div class="col-lg-2 col-6 mb-4">
-          <p class="text-dark titles fs-5 fw-bold">Quick Link</p>
-          <a href="index.html" class="text-dark d-block mb-3">
-            <p>My Account</p>
-          </a>
-          <a href="index.html" class="text-dark d-block mb-3">
-            <p>My Cart</p>
-          </a>
-          <a href="#" class="text-dark d-block mb-3">
-            <p>Wishlist</p>
-          </a>
-          <a href="#" class="text-dark d-block mb-3">
-            <p>Gift Card</p>
-          </a>
-          <a href="frequently-asked-questions.html" class="text-dark d-block mb-3">
-            <p>Need Help?</p>
-          </a>
-        </div>
-
-        <!-- Information Section -->
-        <div class="col-lg-2 col-6 mb-4">
-          <p class="text-dark titles fw-bold fs-5">Information</p>
-          <a href="about-us.html" class="text-dark d-block mb-3 textnav">
-            <p>About us</p>
-          </a>
-          <a href="about-us.html" class="text-dark d-block mb-3 textnav">
-            <p>Contact</p>
-          </a>
-          <a href="blog-details.html" class="text-dark d-block mb-3">
-            <p>Blogs</p>
-          </a>
-          <a href="#" class="text-dark d-block mb-3">
-            <p>Size Chart</p>
-          </a>
-          <a href="frequently-asked-questions.html" class="text-dark d-block mb-3">
-            <p>FAQ</p>
-          </a>
-        </div>
-
-        <!-- Policies Section -->
-        <div class="col-lg-2 col-6 mb-4">
-          <p class="text-dark titles fw-bold fs-5">Policies</p>
-          <a href="#" class="text-dark d-block mb-3 textnav">
-            <p>Privacy Policy</p>
-          </a>
-          <a href="#" class="text-dark d-block mb-3 textnav">
-            <p>Refund Policy</p>
-          </a>
-          <a href="frequently-asked-questions.html" class="text-dark d-block mb-3">
-            <p>Terms of Service</p>
-          </a>
-          <a href="#" class="text-dark d-block mb-3">
-            <p>Shipping Policy</p>
-          </a>
-          <a href="about-us.html" class="text-dark d-block mb-3">
-            <p>Contact Information</p>
-          </a>
+          <!-- Policies Section -->
+          <div class="col-lg-2 col-6 mb-4">
+            <p class="text-dark titles fw-bold fs-5">Policies</p>
+            <a href="#" class="text-dark d-block mb-3 textnav">
+              <p>Privacy Policy</p>
+            </a>
+            <a href="#" class="text-dark d-block mb-3 textnav">
+              <p>Refund Policy</p>
+            </a>
+            <a
+              href="frequently-asked-questions.html"
+              class="text-dark d-block mb-3"
+            >
+              <p>Terms of Service</p>
+            </a>
+            <a href="#" class="text-dark d-block mb-3">
+              <p>Shipping Policy</p>
+            </a>
+            <a href="about-us.html" class="text-dark d-block mb-3">
+              <p>Contact Information</p>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <br />
-    <hr />
+      <br />
+      <hr />
 
-    <!-- Copyright Section -->
-    <div class="align-items-center flex-column d-flex justify-content-center mt-3 copyrightsec">
-      <p class="text-dark d-block">
-        © Copyright <strong>Minimalin</strong> . All rights reserved.
-      </p>
-    </div>
-  </footer>
-  <!--------------------------------------- end of footer----------------------- -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="Assets/JS/bootstrap.bundle.min.js"></script>
-  <script src="Assets/JS/index.js"></script>
-</body>
-
+      <!-- Copyright Section -->
+      <div
+        class="align-items-center flex-column d-flex justify-content-center mt-3 copyrightsec"
+      >
+        <p class="text-dark d-block">
+          © Copyright <strong>Minimalin</strong> . All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!--------------------------------------- end of footer----------------------- -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="Assets/JS/index.js"></script>
+  </body>
 </html>
