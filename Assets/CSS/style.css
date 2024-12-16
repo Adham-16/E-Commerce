@@ -1204,6 +1204,7 @@ footer {
   font-weight: 500;
 }
 
+
 .blockquote {
   font-size: 23px;
   background-color: #ebebeb;
@@ -1222,15 +1223,41 @@ footer {
 .blockquote::before {
   color: white;
   content: "\،،";
-  font-size: 500px;
+  font-size: 30vw; 
   position: absolute;
-  right: 45px;
-  top: 40%;
+  right: 5%; 
+  top: 50%; 
   transform: translateY(-50%);
   z-index: -1;
 }
 
-.pagr {
+@media (max-width: 768px) {
+  .blockquote {
+    font-size: 18px; 
+    padding: 40px 30px; 
+  }
+
+  .blockquote::before {
+    font-size: 40vw; 
+    right: 10%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .blockquote {
+    font-size: 16px; 
+    padding: 30px 20px; }
+
+  .blockquote::before {
+    font-size: 60vw; 
+    right: 15%; 
+  }
+}
+
+
+
+
+.ContentBlog {
   color: #303030db;
   font-size: 16px;
   margin: 0;
@@ -1246,11 +1273,17 @@ footer {
   border-radius: 4px !important;
   margin-bottom: 5px;
 }
+
 .btn_tags:hover {
-  background-color: #465158 !important;
+  background-color: #0a85d1 !important;
   color: white !important;
   border: none;
 }
+
+.links a:hover i {
+  color: #0a85d1; 
+}
+
 .comment-img {
   margin-right: 30px;
   width: 100px;
@@ -1353,7 +1386,7 @@ footer {
   background-color: #0056b3;
 }
 
-.additional-section {
+.Newsletter{
   border-radius: 15px;
   text-align: center;
   padding: 30px;
